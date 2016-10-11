@@ -12,9 +12,11 @@
 */
 
 //前台登录路由
-//登录表单Try
 
-Route::post("/login","LoginController@login");
+//登录表单
+
+//登录表单
+Route::get("/login","LoginController@login");
 
 //执行登陆
 Route::post("/dologin","LoginController@dologin");
@@ -63,10 +65,12 @@ Route::get('/admin',function(){
 		// Route::get("zhuan","Admin\GoodsController@zhuan");	//成功后指向
 		Route::get("zhuan","Admin\StuController@zhuan");//执行成功的跳转
 
+
 	});
 
 
-//1 大娃真帅 
+//1 登录表单 
+
 	Route::get("admin/login","Admin\LoginController@login");
 //2 执行登录 
 	Route::post("admin/dologin","Admin\LoginController@dologin");

@@ -1,19 +1,29 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace App\Http\Controllers;
 
 =======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 
 namespace App\Http\Controllers;
 
 
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
 
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
@@ -39,6 +49,10 @@ class EnrollController extends Controller
     	$userSex = $request->input('userSex');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
 
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02

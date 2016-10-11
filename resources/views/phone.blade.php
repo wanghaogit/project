@@ -928,7 +928,11 @@ function bannerga(t){
         <div class="list-item" data-class="" dDocName='P9-CN'  >
           <div class="list-item-images">
 <<<<<<< HEAD
+<<<<<<< HEAD
           	           	  		 <a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-bg" alt="" src="phoneImg/20150601164745_120.png"></a>
+=======
+          	           	  		 <a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-bg" alt="" src="phoneImg/bia.jpg"></a>
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
           	           	  		 <a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-bg" alt="" src="phoneImg/bia.jpg"></a>
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02

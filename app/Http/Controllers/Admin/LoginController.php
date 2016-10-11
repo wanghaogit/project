@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 namespace App\Http\Controllers\Admin;
 
@@ -12,20 +13,28 @@ use App\Http\Requests;
 
 
 =======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 use App\Http\Controllers\Controller;
 use Gregwar\Captcha\CaptchaBuilder;//使用验证码的类
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 class LoginController extends Controller
@@ -34,16 +43,22 @@ class LoginController extends Controller
     public function Login()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return view('admin.login');
         // return 33333;
     }
 
 
 =======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
     	return view('admin.login');
         // return 33333;
     }
 
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
     //2 执行登录 
     public function dologin(Request $request)
@@ -51,7 +66,10 @@ class LoginController extends Controller
         // //1 验证码
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
             $mycode = session()->get("code");
@@ -83,7 +101,10 @@ class LoginController extends Controller
                     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
                     return back()->with("msg","只需998一秒变管理");
@@ -118,8 +139,12 @@ class LoginController extends Controller
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
 =======
 }
 >>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
