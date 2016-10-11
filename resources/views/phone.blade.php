@@ -47,8 +47,8 @@
  
  
  
-	
-			
+  
+      
   <!--node label-->
 <!--header & footer-->
 <!--for compare parms-->
@@ -212,17 +212,17 @@ var WEB_SITE_SHORT = "cn";
 var SYS_DELAY_SECS = 600;//delay time(ms)
 var imgpre ="http://consumer-res.huaweistatic.com/resources/ucmupload/img/";
 function setSearchKeys(key){ 
-	return '关于"' + key + '"的搜索结果'
+  return '关于"' + key + '"的搜索结果'
 }
 function setsetSearchResults(rows,key){
-	return '找到关于"' + key + '"的结果'+rows+'条'
+  return '找到关于"' + key + '"的结果'+rows+'条'
 }
-	var loginurl = "http://consumer.huawei.com/support/login/cloudplatforms?siteURL=" + encodeURIComponent(window.location.href);
-	var logoutUrl ="http://consumer.huawei.com/support/logout/cloudplatforms?siteURL="+ encodeURIComponent("https://hwid1.vmall.com/casserver/logout?service="+window.location.href);
-	var registerurl="https://hwid1.vmall.com/oauth2/portal/regbymail.jsp?service=" + encodeURIComponent("http://consumer.huawei.com/support/login/cloudplatforms?siteURL=http://consumer.huawei.com/cn/index.htm")+"?loginChannel=27000000&reqClientType=27&deviceID=";
+  var loginurl = "http://consumer.huawei.com/support/login/cloudplatforms?siteURL=" + encodeURIComponent(window.location.href);
+  var logoutUrl ="http://consumer.huawei.com/support/logout/cloudplatforms?siteURL="+ encodeURIComponent("https://hwid1.vmall.com/casserver/logout?service="+window.location.href);
+  var registerurl="https://hwid1.vmall.com/oauth2/portal/regbymail.jsp?service=" + encodeURIComponent("http://consumer.huawei.com/support/login/cloudplatforms?siteURL=http://consumer.huawei.com/cn/index.htm")+"?loginChannel=27000000&reqClientType=27&deviceID=";
 
-</script>	
-			
+</script> 
+      
   <!-- SS_BEGIN_SNIPPET(fragment3,header)--><script>
 var LAG_Phone_banner1 = "Navi-smartphone-1";
 var LAG_Phone_banner2 = "Navi-smartphone-2";
@@ -249,22 +249,22 @@ var LAG_HOME_Fos_banner3 = "Home-follow us-huafans";
 var LAG_HOME_Fos_banner4 = "Home-follow us-huafans weixin";
 var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
 </script>
-			<!-- SS_END_SNIPPET(fragment3,header)-->		
+      <!-- SS_END_SNIPPET(fragment3,header)-->    
  
-			 
-	 			
-			
-		
+       
+        
+      
+    
   <meta name="description" content="华为手机官网提供智能手机HUAWEI Mate S、华为 P8、华为Mate7、华为G7报等4G手机的配置参数详细介绍"/>
   <meta name="keywords" content="华为手机，华为官网，HUAWEI Mate S,华为 P8, 华为Mate7，华为G7，华为手机参数，华为"/>
   <meta property="og:image" content= "" />
   <meta property="og:title" content= "【华为手机】- 华为手机官网" />
   <title>【华为手机】- 华为手机官网</title>
    
-  	<script>
-  		if(window.location.href.indexOf("https:") > -1)	window.location = window.location.href.replace("https","http")
-  		if(window.location.href.indexOf("c.huawei.com") > -1)	window.location = window.location.href.replace("c.huawei.com","consumer.huawei.com")
-  	</script>
+    <script>
+      if(window.location.href.indexOf("https:") > -1) window.location = window.location.href.replace("https","http")
+      if(window.location.href.indexOf("c.huawei.com") > -1) window.location = window.location.href.replace("c.huawei.com","consumer.huawei.com")
+    </script>
   <link rel="stylesheet" href="phoneList/Content/css_con_cn_ht_share.css" type="text/css" media="screen, project, print" /> 
   <link rel="stylesheet" href="phoneList/Content/css_con_cn_main_split.css" type="text/css" media="screen, project, print" />
   <link rel="stylesheet" href="phoneList/Content/css_con_cn_main.css" type="text/css" media="screen, project, print" />
@@ -277,20 +277,20 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
   <script type="text/javascript" src="phoneList/Scripts/script_dev_en_html5.js"></script>
   <script type="text/javascript" src="phoneList/Scripts/hw_lib_bundl.js"></script>
   <script type="text/javascript" src="phoneList/Scripts/script_con_cn_product.js"></script>
-  <script type="text/javascript" src="phoneList/Scripts/script_con_common_url.js"></script>		
+  <script type="text/javascript" src="phoneList/Scripts/script_con_common_url.js"></script>   
   <script type="text/javascript" src="phoneList/Scripts/script_dev_en_selectbox.js"></script>
   <script type="text/javascript" src="phoneList/Scripts/script_con_cn_goocombo.js"></script>
   <script id="ssInfo" type="text/xml" warning="DO NOT MODIFY!"><ssinfo ></script>
   <meta name="GENERATOR" content="MSHTML 8.00.7601.19003" />
-	<script type="text/javascript">
-	setTimeout(function(){var a=document.createElement("script");
-	var b=document.getElementsByTagName("script")[0];
-	a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0031/0817.js?"+Math.floor(new Date().getTime()/3600000);
-	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-	</script>
+  <script type="text/javascript">
+  setTimeout(function(){var a=document.createElement("script");
+  var b=document.getElementsByTagName("script")[0];
+  a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0031/0817.js?"+Math.floor(new Date().getTime()/3600000);
+  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
 </head>
-		<body id="main_content" class="cbg cbg-lang-zh-cn cbg-clean-layout">	
-		<!-- SS_BEGIN_SNIPPET(fragment1,header)-->				  <!-- cbg-main-nav-wrapper -->
+    <body id="main_content" class="cbg cbg-lang-zh-cn cbg-clean-layout">  
+    <!-- SS_BEGIN_SNIPPET(fragment1,header)-->          <!-- cbg-main-nav-wrapper -->
   <div id="cbg-main-nav-wrapper" style="z-index:10001"> 
     <!-- main nav -->
     <div id="cbg-main-nav" class="cbg-centered">
@@ -331,7 +331,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
         <div class="cbg-overlay cbg-overlay-left"></div>
         <ul class="cbg-wrapper cbg-inline">
           <li class="col col-1 col-product" data-p-val="phone-b1">
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/mobile-phones/features/mate8-cn.htm">
@@ -344,8 +344,8 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
             </div>
           </li>
           <li class="col col-2 col-product" data-p-val="phone-b2">
-         	 
-    		
+           
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/mobile-phones/features/p9-cn.htm">
@@ -358,8 +358,8 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
             </div>
           </li>
           <li class="col col-3 col-product" data-p-val="phone-b3">
-          	 
-    		
+             
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/mobile-phones/g9-plus/">
@@ -372,8 +372,8 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
             </div>
           </li>
           <li class="col col-4 col-product" data-p-val="phone-b4">
-          	 
-    		
+             
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/mobile-phones/features/milan-cn.htm">
@@ -410,8 +410,8 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
         <div class="cbg-overlay cbg-overlay-left"></div>
         <ul class="cbg-wrapper cbg-inline">
           <li class="col col-1 col-product" data-p-val="table-b1">
-          	 
-    		
+             
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/tablets/matebook/index.html">
@@ -424,7 +424,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
           </li>
           <li class="col col-2 col-product" data-p-val="table-b2">
             
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/tablets/mediapad-m3-8">
@@ -445,7 +445,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
         <ul class="cbg-wrapper cbg-inline">
           <li class="col col-1 col-product" data-p-val="wearable-b1">
             
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/wearables/features/k2.htm">
@@ -458,7 +458,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
           </li>
           <li class="col col-2 col-product" data-p-val="wearable-b2">
            
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <a href="http://consumer.huawei.com/cn/wearables/features/b3-cn.htm">
@@ -514,7 +514,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
         <ul class="cbg-wrapper cbg-inline">
           <li class="col col-1 col-product">
             
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content" data-p-val="more-b1">
               <a href="http://consumer.huawei.com/cn/mobile-broadband/mobile-wifi/features/mobilewifiplus-cn.htm">
@@ -529,7 +529,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
           </li>
           <li class="col col-2 col-product">
              
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content" data-p-val="more-b2">
               <a href="http://consumer.huawei.com/cn/smart-home/wireless-routers/a1-cn/index.htm">
@@ -544,7 +544,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
           </li>
           <li class="col col-3 col-product fixw">
             
-    		
+        
             <div class="cbg-overlay"></div>
             <div class="cbg-content" data-p-val="more-b3">
               <a href="http://consumer.huawei.com/cn/accessories/wall01/index.htm">
@@ -567,36 +567,36 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
           <li class="col col-1 data col-product" data-p-val="wearable-b1">
             <div class="cbg-overlay"></div>
             <div class="cbg-content clearfix">
-				<div class="data-img">
-					<a rel="nofollow" href="http://shopcn.huawei.com/member/" class="avatar" target="_blank"></a>
-				</div>
-				<div class="data-information">
-					<div class="data-info-hd">
-            			<span class="name-td"><a rel="nofollow" href="http://shopcn.huawei.com/member/" class="name" target="_blank"></a> 欢迎您！</span><a href="/cn/mobile-phones/index.htm#" class="btn-loginout">退出</a>
-          			</div>
-					<div class="data-status">
-              			<a rel="nofollow" href="http://consumer.huawei.com/cn/account/com/index.htm" class="phone status-item" target="_blank"><ins class="cbg-icon cbg-icon1 da-phe"></ins><span class="not-passed">未验证手机</span></a>
-              			<a rel="nofollow" href="http://consumer.huawei.com/cn/account/com/index.htm" class="email status-item" target="_blank"><ins class="cbg-icon cbg-icon1 da-phe"></ins><span class="not-passed">未验证邮箱</span></a>
-              			<a rel="nofollow" href="http://consumer.huawei.com/cn/account/com/index.htm" class="attest status-item" target="_blank"><ins class="cbg-icon cbg-icon1 da-phe"></ins><span class="not-passed">未实名认证</span></a>
-					</div>
-				</div>
+        <div class="data-img">
+          <a rel="nofollow" href="http://shopcn.huawei.com/member/" class="avatar" target="_blank"></a>
+        </div>
+        <div class="data-information">
+          <div class="data-info-hd">
+                  <span class="name-td"><a rel="nofollow" href="http://shopcn.huawei.com/member/" class="name" target="_blank"></a> 欢迎您！</span><a href="/cn/mobile-phones/index.htm#" class="btn-loginout">退出</a>
+                </div>
+          <div class="data-status">
+                    <a rel="nofollow" href="http://consumer.huawei.com/cn/account/com/index.htm" class="phone status-item" target="_blank"><ins class="cbg-icon cbg-icon1 da-phe"></ins><span class="not-passed">未验证手机</span></a>
+                    <a rel="nofollow" href="http://consumer.huawei.com/cn/account/com/index.htm" class="email status-item" target="_blank"><ins class="cbg-icon cbg-icon1 da-phe"></ins><span class="not-passed">未验证邮箱</span></a>
+                    <a rel="nofollow" href="http://consumer.huawei.com/cn/account/com/index.htm" class="attest status-item" target="_blank"><ins class="cbg-icon cbg-icon1 da-phe"></ins><span class="not-passed">未实名认证</span></a>
+          </div>
+        </div>
             </div>
           </li>
           <li class="col col-2 from col-product" data-p-val="wearable-b2">
             <div class="cbg-overlay"></div>
             <div class="cbg-content">
               <div class="from-img">
-				  <a rel="nofollow" href="http://shopcn.huawei.com/member/order" target="_blank">
-					<p class="cbg-icon cbg-icon1 fm-icon"></p>
-					<p class="p-puse"><span class="wd">我的订单<i class="order-amount"></i></span></p>
-				  </a>
-			   </div>
-			   <div class="from-img">
-				  <a rel="nofollow" href="http://shopcn-cart.huawei.com/cart/cart.html" target="_blank">
-					<p class="cbg-icon cbg-icon1 puse-icon"></p>
-					<p class="p-puse"><span class="wd">购物车<i class="cart-amount"></i></span></p>
-				  </a>
-			   </div>
+          <a rel="nofollow" href="http://shopcn.huawei.com/member/order" target="_blank">
+          <p class="cbg-icon cbg-icon1 fm-icon"></p>
+          <p class="p-puse"><span class="wd">我的订单<i class="order-amount"></i></span></p>
+          </a>
+         </div>
+         <div class="from-img">
+          <a rel="nofollow" href="http://shopcn-cart.huawei.com/cart/cart.html" target="_blank">
+          <p class="cbg-icon cbg-icon1 puse-icon"></p>
+          <p class="p-puse"><span class="wd">购物车<i class="cart-amount"></i></span></p>
+          </a>
+         </div>
             </div>
           </li>
         </ul>
@@ -650,80 +650,80 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
     }
     
     function repalceSpace(str){
-	if(str == null){
-		return "";
-	}else{
-		str = str.replace(/\+/g," "); 
-		str = str.replace(/@\(R\)@/g,"®"); 
-		str = str.replace(/@\(-7\)@/g,"&");
-		str = str.replace(/@\(-8\)@/g,"+"); 
-		str = str.replace(/@\(-9\)@/g,"'"); 
-		str = str.replace(/@\(TM\)@/g,"™"); 
-		str = str.replace(/@\(C\)@/g,"©"); 
-		return str;		
-	}
+  if(str == null){
+    return "";
+  }else{
+    str = str.replace(/\+/g," "); 
+    str = str.replace(/@\(R\)@/g,"®"); 
+    str = str.replace(/@\(-7\)@/g,"&");
+    str = str.replace(/@\(-8\)@/g,"+"); 
+    str = str.replace(/@\(-9\)@/g,"'"); 
+    str = str.replace(/@\(TM\)@/g,"™"); 
+    str = str.replace(/@\(C\)@/g,"©"); 
+    return str;   
+  }
 }
 </script>
 
 
 
-			<!-- SS_END_SNIPPET(fragment1,header)-->
-  		<div id="cbg-main" class="cbg-centered">
+      <!-- SS_END_SNIPPET(fragment1,header)-->
+      <div id="cbg-main" class="cbg-centered">
 
     
-	
-	
-		
-	
-	    
-		<div class="list-slides banner"><ul class="slides">
-	 	 			<li name='IMG_CON_CN_MP_BANNER2'>
-         			    	
-                            	
-         			    	
-                        	
-         			    		<div class="list-slide-content list-slide-content-1">
-									<div class="list-slide-text">
-         			          					<div class="list-slide-action y-button">
-         			             					<div class="list-slide-btn y-learn-more"><a href="/cn/mobile-phones/features/huawei-nova-cn.htm" onclick="javascript:bannerga(this)" class="list-slide-a"></a></div>                								
-                											<div class="list-slide-btn y-buy-btn">
-                												<a href="http://mm.vmall.com/nova.html?cid=10187" class="list-slide-a list-slide-buy-toggle js-banner-buy" data-pname="HUAWEI nova">
-					    											<span class="cbg-icon cbg-icon-cart-small"></span>
-					  											</a>
-					  										</div>
-					  								</div>
-         			       						</div>
-         			    			</div>
-         			    		<div class="list-slide-thumb"><img pro-name="HUAWEI nova" alt="HUAWEI nova" src="phoneList/Picture/img_con_cn_mp_banner2.jpg" data-position="1"></div>
-         			</li>		 			
-	 	 			<li name='IMG_CON_CN_MP_BANNER1'>
-         			    	
-                            	
-         			    	
-                        	
-         			    		<div class="list-slide-content list-slide-content-1">
-									<div class="list-slide-text">
-         			          					<div class="list-slide-action y-button">
-         			             					<div class="list-slide-btn y-learn-more"><a href="/cn/mobile-phones/features/p9plus-cn.htm" onclick="javascript:bannerga(this)" class="list-slide-a"></a></div>                								
-                											<div class="list-slide-btn y-buy-btn">
-                												<a href="http://shopcn.huawei.com/item/634568055.html" class="list-slide-a list-slide-buy-toggle js-banner-buy" data-pname="HUAWEI P9 Plus">
-					    											<span class="cbg-icon cbg-icon-cart-small"></span>
-					  											</a>
-					  										</div>
-					  								</div>
-         			       						</div>
-         			    			</div>
-         			    		<div class="list-slide-thumb"><img pro-name="HUAWEI P9 Plus" alt="HUAWEI P9 Plus" src="phoneList/Picture/img_con_cn_mp_banner1.jpg" data-position="1"></div>
-         			</li>		 			
-		</ul></div>	
-    		<ul class="list-slide-nav">
-      	 			<li class="list-slide-active">
-        				HUAWEI nova
-     	 			</li>
-      	 			<li class="list-slide-active">
-        				HUAWEI P9 Plus
-     	 			</li>
-    		</ul>				 
+  
+  
+    
+  
+      
+    <div class="list-slides banner"><ul class="slides">
+          <li name='IMG_CON_CN_MP_BANNER2'>
+                    
+                              
+                    
+                          
+                      <div class="list-slide-content list-slide-content-1">
+                  <div class="list-slide-text">
+                                  <div class="list-slide-action y-button">
+                                    <div class="list-slide-btn y-learn-more"><a href="/cn/mobile-phones/features/huawei-nova-cn.htm" onclick="javascript:bannerga(this)" class="list-slide-a"></a></div>                                
+                                      <div class="list-slide-btn y-buy-btn">
+                                        <a href="http://mm.vmall.com/nova.html?cid=10187" class="list-slide-a list-slide-buy-toggle js-banner-buy" data-pname="HUAWEI nova">
+                                    <span class="cbg-icon cbg-icon-cart-small"></span>
+                                  </a>
+                                </div>
+                            </div>
+                                </div>
+                        </div>
+                      <div class="list-slide-thumb"><img pro-name="HUAWEI nova" alt="HUAWEI nova" src="phoneList/Picture/img_con_cn_mp_banner2.jpg" data-position="1"></div>
+              </li>         
+          <li name='IMG_CON_CN_MP_BANNER1'>
+                    
+                              
+                    
+                          
+                      <div class="list-slide-content list-slide-content-1">
+                  <div class="list-slide-text">
+                                  <div class="list-slide-action y-button">
+                                    <div class="list-slide-btn y-learn-more"><a href="/cn/mobile-phones/features/p9plus-cn.htm" onclick="javascript:bannerga(this)" class="list-slide-a"></a></div>                               
+                                      <div class="list-slide-btn y-buy-btn">
+                                        <a href="http://shopcn.huawei.com/item/634568055.html" class="list-slide-a list-slide-buy-toggle js-banner-buy" data-pname="HUAWEI P9 Plus">
+                                    <span class="cbg-icon cbg-icon-cart-small"></span>
+                                  </a>
+                                </div>
+                            </div>
+                                </div>
+                        </div>
+                      <div class="list-slide-thumb"><img pro-name="HUAWEI P9 Plus" alt="HUAWEI P9 Plus" src="phoneList/Picture/img_con_cn_mp_banner1.jpg" data-position="1"></div>
+              </li>         
+    </ul></div> 
+        <ul class="list-slide-nav">
+              <li class="list-slide-active">
+                HUAWEI nova
+            </li>
+              <li class="list-slide-active">
+                HUAWEI P9 Plus
+            </li>
+        </ul>        
 <script type="text/javascript">
 var setImgBanner = {
     init: function(opt){
@@ -732,24 +732,24 @@ var setImgBanner = {
     setBtnPosition: function(opt){
         var pro_name = $(opt.elem).find(opt.img_tag).attr("pro-name"), posit = $(opt.elem).find(opt.img_tag).attr("data-position")=="" ? "0" : $(opt.elem).find(opt.img_tag).attr("data-position");
         if(pro_name && posit){
-			var slide_text = $(opt.elem).find(".list-slide-content");
-			$(opt.elem).find(".y-learn-more .list-slide-a").text(opt.more_text);
-			$(opt.elem).find(".y-buy-btn .list-slide-a").append(opt.buy_text);
-			posit.length>0?(posit!=""&&posit=="1" ? slide_text.addClass("list-slide-content-right"):""):"";
-			$(opt.elem).find(".list-slide-buy-item .x-disabled").length > 3 ? $(opt.elem).find(".y-buy-btn").remove() : "";
-			var btn = $(opt.elem).find(".list-slide-btn");
-			btn.length == 1 ? btn.css("float","none") : "";
-		}
+      var slide_text = $(opt.elem).find(".list-slide-content");
+      $(opt.elem).find(".y-learn-more .list-slide-a").text(opt.more_text);
+      $(opt.elem).find(".y-buy-btn .list-slide-a").append(opt.buy_text);
+      posit.length>0?(posit!=""&&posit=="1" ? slide_text.addClass("list-slide-content-right"):""):"";
+      $(opt.elem).find(".list-slide-buy-item .x-disabled").length > 3 ? $(opt.elem).find(".y-buy-btn").remove() : "";
+      var btn = $(opt.elem).find(".list-slide-btn");
+      btn.length == 1 ? btn.css("float","none") : "";
+    }
     }
 };
 
 function setBannerPageview(index){
- //	trackPageview("/banner"+index,"/home/banner"+index);
+ // trackPageview("/banner"+index,"/home/banner"+index);
 }
 $(document).ready(function(){
-	$(window).on('resize', function () {
-	var h = (810 * $(document).width() / 1920) | 0
-	//var h = 600;
+  $(window).on('resize', function () {
+  var h = (810 * $(document).width() / 1920) | 0
+  //var h = 600;
     $('.list-slides').css('height',h )
     $('.list-slides img').css('height',h )
   }).trigger('resize');
@@ -768,158 +768,158 @@ $(document).ready(function(){
     });
     
     $(".slides").children("li").each(function(){
-		var settings = {
-			"elem": $(this),
-			"img_tag": ".list-slide-thumb img",
-			"more_text":"了解更多",
-			"buy_text": "马上购买"
-		};
-		setImgBanner.init(settings);
-	})
-	
-	$(".y-buy-btn .list-slide-buy-item li,#cbg-main .list-slide-thumb img").click(function(obj){
-		var title =$(obj).attr("pro-name");
-		var icon = $(obj).attr("data-t-act");
-		if(!title){
-			title= $(".list-slide-nav .list-slide-active").text();	
-		}
-		if(!title){
-			title= ("#cbg-main .list-slide-thumb img").attr("pro-name");	
-		}
-		trackEvent('phone-banner-Purchase',icon,title,"");
-	})
-	$('.js-banner-buy').on('click', function(){
-		var pname = $(this).attr('data-pname');
-		trackEvent('Entrance > BuyNow', pname, 'ProductListBanner');
-	});	
+    var settings = {
+      "elem": $(this),
+      "img_tag": ".list-slide-thumb img",
+      "more_text":"了解更多",
+      "buy_text": "马上购买"
+    };
+    setImgBanner.init(settings);
+  })
+  
+  $(".y-buy-btn .list-slide-buy-item li,#cbg-main .list-slide-thumb img").click(function(obj){
+    var title =$(obj).attr("pro-name");
+    var icon = $(obj).attr("data-t-act");
+    if(!title){
+      title= $(".list-slide-nav .list-slide-active").text();  
+    }
+    if(!title){
+      title= ("#cbg-main .list-slide-thumb img").attr("pro-name");  
+    }
+    trackEvent('phone-banner-Purchase',icon,title,"");
+  })
+  $('.js-banner-buy').on('click', function(){
+    var pname = $(this).attr('data-pname');
+    trackEvent('Entrance > BuyNow', pname, 'ProductListBanner');
+  }); 
 });
 function bannerga(t){
-	var category = getCategory("31001");
-	var _title = $(t).parents("li").find("img").attr("alt");
-	ga('send', 'event', category, _title,"banner-understanding");
+  var category = getCategory("31001");
+  var _title = $(t).parents("li").find("img").attr("alt");
+  ga('send', 'event', category, _title,"banner-understanding");
 }
 </script>
  <!-- list-filter-->
 <div class="list-filter" data-auto-tracking="true" data-t-act="mobile-phones-filter">
-	<h3>筛选查看</h3>
+  <h3>筛选查看</h3>
     <div class="list-filter-menus">
-    	<ul class="phone_filter" id="phone_filter">
-			<li class="list-fiter-line" id="structured_field_44">
-				<label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-screen"></span>屏幕尺寸：</label>
-				<div class="list-filter-vals">
-					<!--<div data-p-val="fil-b0">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="4.0">&lt;4.0''<span></span></span></a>
-					</div>-->
-					<div data-p-val="fil-b1">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="4.0_4.9">4.0''~4.9''<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b2">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="5.0_5.9">5.0''~5.9''<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b3">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="6.0">6.0''及以上<span></span></span></a>
-					</div>
-				</div>
-			</li>
-			<li class="list-fiter-line" id="structured_field_41">
-				<label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-feature"></span>功能亮点：</label>
-				<div class="list-filter-vals">
-					<div data-p-val="fil-b0">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Slim">超薄<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b1">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Long_lasting_battery">超大容量电池<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b2">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Excellent_camera">拍照神器<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b3">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Dual_Sim">双卡双待<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b3">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Dual_4G">双4G支持<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b4" id="structured_field_41">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Octa_core_CPU">八核CPU<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b4" id="structured_field_41">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="2.5D_Screen">2.5D屏幕<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b4" id="structured_field_41">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="All_4G">4G全网通<span></span></span></a>
-					</div>
-				</div>
-			</li>
-			<li class="list-fiter-line" id="structured_field_45">
-				<label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-camera"></span>摄像头像素：</label>
-				<div class="list-filter-vals">
-					<div data-p-val="fil-b0">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="5_8megapixels">500万~800万以下<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b1">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="8_13megapixels">800万~1300万以下<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b2">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="13_16megapixels">1300万~1600万以下<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b3">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="16megapixels">1600万及以上<span></span></span></a>
-					</div>
-				</div>
-			</li>
-			<li class="list-fiter-line" id="structured_field_42">
-				<label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-series"></span>系列类型：</label>
-				<div class="list-filter-vals">
-					<div data-p-val="fil-b0">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Mate_series">Mate系列<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b1">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="P_series">P系列<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b2">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="G_series">G系列<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b3">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="Y_series">Y系列<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b5">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="MaiMang_series">麦芒系列<span></span></span></a>
-					</div>
-					<div data-p-val="fil-b5">
-						<a href="javascript:void(0);"><span class="list-filter-val" id="MediaPad_series">MediaPad系列<span></span></span></a>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="list-item-compare-tooltip list-filter-noresult-tooltip">
-		<i>&nbsp;</i> 没有找到相关的产品。请您重设筛选条件。
-	</div>
+      <ul class="phone_filter" id="phone_filter">
+      <li class="list-fiter-line" id="structured_field_44">
+        <label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-screen"></span>屏幕尺寸：</label>
+        <div class="list-filter-vals">
+          <!--<div data-p-val="fil-b0">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="4.0">&lt;4.0''<span></span></span></a>
+          </div>-->
+          <div data-p-val="fil-b1">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="4.0_4.9">4.0''~4.9''<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b2">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="5.0_5.9">5.0''~5.9''<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b3">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="6.0">6.0''及以上<span></span></span></a>
+          </div>
+        </div>
+      </li>
+      <li class="list-fiter-line" id="structured_field_41">
+        <label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-feature"></span>功能亮点：</label>
+        <div class="list-filter-vals">
+          <div data-p-val="fil-b0">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Slim">超薄<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b1">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Long_lasting_battery">超大容量电池<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b2">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Excellent_camera">拍照神器<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b3">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Dual_Sim">双卡双待<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b3">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Dual_4G">双4G支持<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b4" id="structured_field_41">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Octa_core_CPU">八核CPU<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b4" id="structured_field_41">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="2.5D_Screen">2.5D屏幕<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b4" id="structured_field_41">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="All_4G">4G全网通<span></span></span></a>
+          </div>
+        </div>
+      </li>
+      <li class="list-fiter-line" id="structured_field_45">
+        <label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-camera"></span>摄像头像素：</label>
+        <div class="list-filter-vals">
+          <div data-p-val="fil-b0">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="5_8megapixels">500万~800万以下<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b1">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="8_13megapixels">800万~1300万以下<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b2">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="13_16megapixels">1300万~1600万以下<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b3">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="16megapixels">1600万及以上<span></span></span></a>
+          </div>
+        </div>
+      </li>
+      <li class="list-fiter-line" id="structured_field_42">
+        <label class="list-filter-label"><span class="cbg-icon cbg-icon-filter-series"></span>系列类型：</label>
+        <div class="list-filter-vals">
+          <div data-p-val="fil-b0">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Mate_series">Mate系列<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b1">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="P_series">P系列<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b2">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="G_series">G系列<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b3">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="Y_series">Y系列<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b5">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="MaiMang_series">麦芒系列<span></span></span></a>
+          </div>
+          <div data-p-val="fil-b5">
+            <a href="javascript:void(0);"><span class="list-filter-val" id="MediaPad_series">MediaPad系列<span></span></span></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="list-item-compare-tooltip list-filter-noresult-tooltip">
+    <i>&nbsp;</i> 没有找到相关的产品。请您重设筛选条件。
+  </div>
 </div>
 <!-- /list-filter -->
 <div class="list-main">
-	<div class="cbg-breadcrumbs-hend cbg-centered" data-auto-tracking="true" data-t-act="breadcrumbs">
-    					<ul class="cbg-inline cbg-wrapper"><li>
+  <div class="cbg-breadcrumbs-hend cbg-centered" data-auto-tracking="true" data-t-act="breadcrumbs">
+              <ul class="cbg-inline cbg-wrapper"><li>
  
  
  
-	
-	 
-	
-	 
-	 
-		
-			<a href="http://consumer.huawei.com/cn/">&nbsp;首页&nbsp;»</a><a href="http://consumer.huawei.com/cn/mobile-phones/index.htm">&nbsp;手机</a>
-	
+  
+   
+  
+   
+   
+    
+      <a href="http://consumer.huawei.com/cn/">&nbsp;首页&nbsp;»</a><a href="http://consumer.huawei.com/cn/mobile-phones/index.htm">&nbsp;手机</a>
+  
 </li></ul>
-			
+      
     </div>
     <div class="list-compare list-none">
-    	<div class="list-compare-title">已选对比机型</div>
+      <div class="list-compare-title">已选对比机型</div>
         <div class="list-compare-body"></div>
         <div class="list-compare-btn list-none"  data-t-label="start-compare">产品对比</div>
      </div>
-	
+  
 <!---->
 
 <!-- 遍历开始 -->
@@ -927,10 +927,10 @@ function bannerga(t){
 <div class="list-items" style="display:block;">
         <div class="list-item" data-class="" dDocName='P9-CN'  >
           <div class="list-item-images">
-          	           	  		 <a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-bg" alt="" src="phoneImg/20150601164745_120.png"></a>
-          	   
-          	            	  		<a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-image" alt="" src="phoneImg/{{ $goods->Img }}"></a>
-          	                
+                               <a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-bg" alt="" src="phoneImg/20150601164745_120.png"></a>
+               
+                                <a href="/cn/mobile-phones/features/p9-cn.htm"><img class="list-item-image" alt="" src="phoneImg/{{ $goods->Img }}"></a>
+                            
           </div>
           <div class="list-item-detail">
             <div class="list-item-icon list-none"></div>
@@ -939,35 +939,35 @@ function bannerga(t){
           </div>
           <div class="list-item-colorcompare">
             <div class="list-item-colors">
-					 
-					<div class="list-item-color-sel">
-							<div class="list-item-color " style='background-color:#e8daac;'></div>
-              		</div>
-					 
-					<div class="list-item-color-sel">
-							<div class="list-item-color " style='background-color:#ebb2b7;'></div>
-              		</div>
-					 
-					<div class="list-item-color-sel">
-							<div class="list-item-color " style='background-color:#ffffff;border: #ccc solid 1px;'></div>
-              		</div>
-					 
-					<div class="list-item-color-sel">
-							<div class="list-item-color " style='background-color:#e9ddb7;'></div>
-              		</div>
-					 
-					
-					 
-					<div class="list-item-color-sel">
-							<div class="list-item-color " style='background-color:#324879;'></div>
-              		</div>
+           
+          <div class="list-item-color-sel">
+              <div class="list-item-color " style='background-color:#e8daac;'></div>
+                  </div>
+           
+          <div class="list-item-color-sel">
+              <div class="list-item-color " style='background-color:#ebb2b7;'></div>
+                  </div>
+           
+          <div class="list-item-color-sel">
+              <div class="list-item-color " style='background-color:#ffffff;border: #ccc solid 1px;'></div>
+                  </div>
+           
+          <div class="list-item-color-sel">
+              <div class="list-item-color " style='background-color:#e9ddb7;'></div>
+                  </div>
+           
+          
+           
+          <div class="list-item-color-sel">
+              <div class="list-item-color " style='background-color:#324879;'></div>
+                  </div>
             </div>
             <div class="list-item-compare" data-pros-id='P9-CN'>
               <span class="list-item-compare-icon cbg-icon cbg-icon-plus"></span>
               <span class="compare-text" data-cancel-text="取消对比">产品对比</span>
-				<span class="list-item-compare-tooltip">
-				<i>&nbsp;</i>您最多可以添加3款产品进行对比 
-				</span>
+        <span class="list-item-compare-tooltip">
+        <i>&nbsp;</i>您最多可以添加3款产品进行对比 
+        </span>
             </div>
 
           </div>
@@ -975,15 +975,15 @@ function bannerga(t){
           <div class="list-item-footer">
              <div class="list-item-operation">
               <a href="/cn/mobile-phones/features/p9-cn.htm" onclick="javascript:seemorega(this)" class="list-item-more">了解更多信息</a>
-                	<a href="http://shopcn.huawei.com/item/154411301.html" class="list-item-buy cbg-icon cbg-icon-cart-small" target="_blank"></a>
+                  <a href="http://shopcn.huawei.com/item/154411301.html" class="list-item-buy cbg-icon cbg-icon-cart-small" target="_blank"></a>
              </div>
             
           </div>
         </div>
         <div class="for-ssup" style="display:none">
-			<a href="/cn/mobile-phones/features/p9-cn.htm" name="P9-CN"></a>
-			<span name='P9-CN'>徕卡双摄像头，大光圈拍照模式，1200万像素双摄像头</span>
-		</div>
+      <a href="/cn/mobile-phones/features/p9-cn.htm" name="P9-CN"></a>
+      <span name='P9-CN'>徕卡双摄像头，大光圈拍照模式，1200万像素双摄像头</span>
+    </div>
 
 </div>
 @endforeach
@@ -994,7 +994,7 @@ function bannerga(t){
 <script>
 
 </script> </div>
-  		<!-- SS_BEGIN_SNIPPET(fragment3,footer)-->				<!-- footer -->
+      <!-- SS_BEGIN_SNIPPET(fragment3,footer)-->        <!-- footer -->
  
 
 
@@ -1187,6 +1187,6 @@ function bannerga(t){
 
 
 
-			<!-- SS_END_SNIPPET(fragment3,footer)-->
+      <!-- SS_END_SNIPPET(fragment3,footer)-->
 </body>
 </html>
