@@ -12,6 +12,7 @@
 */
 
 //前台登录路由
+
 //登录表单
 Route::get("/login","LoginController@login");
 //执行登陆
@@ -41,6 +42,8 @@ Route::resource("/computer","ComputerController");
 
 
 
+
+//后台登录
 Route::get('/admin',function(){
 	return view('admin.login');
 });

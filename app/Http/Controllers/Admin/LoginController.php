@@ -1,29 +1,98 @@
 <?php
 
+<<<<<<< HEAD
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+namespace App\Http\Controllers\Admin;
+
+
+use Illuminate\Http\Request;
+
+
+use App\Http\Requests;
+
+
+=======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
 use App\Http\Controllers\Controller;
 use Gregwar\Captcha\CaptchaBuilder;//使用验证码的类
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
 class LoginController extends Controller
 {
     //登录
     public function Login()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
         return view('admin.login');
         // return 33333;
     }
 
+<<<<<<< HEAD
+=======
+
+=======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+    	return view('admin.login');
+        // return 33333;
+    }
+
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
     //2 执行登录 
     public function dologin(Request $request)
     {
         // //1 验证码
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
             $mycode = session()->get("code");
             // dd($mycode);
             
@@ -52,6 +121,16 @@ class LoginController extends Controller
                         return redirect("admin/index");
                     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
                     return back()->with("msg","只需998一秒变管理");
                 }
                 return back()->with("msg","用户或密码错误");
@@ -83,4 +162,17 @@ class LoginController extends Controller
         return redirect("admin/login");
     }
 
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+}
+=======
+}
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+}
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9

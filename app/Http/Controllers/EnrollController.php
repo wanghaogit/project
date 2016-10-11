@@ -1,11 +1,40 @@
 <?php
 
+<<<<<<< HEAD
 namespace App\Http\Controllers;
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+namespace App\Http\Controllers;
+
+=======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+
+namespace App\Http\Controllers;
+
+
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
 class EnrollController extends Controller
 {
 	//注册页面
@@ -27,6 +56,17 @@ class EnrollController extends Controller
     	$userPhone = $request->input('userPhone'); 
     	$userSex = $request->input('userSex');
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
 		// 3.执行添加
     	$data = $request->only("userName","userPass","userPhone","userSex");
     	$id = \DB::table('user')->insertGetId($data);
