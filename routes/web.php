@@ -12,6 +12,10 @@
 */
 
 //前台登录路由
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 //登录表单
 Route::get("/login","LoginController@login");
 //执行登陆
@@ -40,6 +44,11 @@ Route::resource("/computer","ComputerController");
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 //后台登录
 Route::get('/admin',function(){
 	return view('admin.login');
@@ -58,6 +67,10 @@ Route::get('/admin',function(){
 		Route::resource("goods","Admin\GoodsController"); //商品管理
 		// Route::get("zhuan","Admin\GoodsController@zhuan");	//成功后指向
 		Route::get("zhuan","Admin\StuController@zhuan");//执行成功的跳转
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 	});
 
 

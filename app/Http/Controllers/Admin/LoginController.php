@@ -1,29 +1,116 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+namespace App\Http\Controllers\Admin;
+
+
+use Illuminate\Http\Request;
+
+
+use App\Http\Requests;
+
+
+=======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 use App\Http\Controllers\Controller;
 use Gregwar\Captcha\CaptchaBuilder;//使用验证码的类
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 class LoginController extends Controller
 {
     //登录
     public function Login()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+        return view('admin.login');
+        // return 33333;
+    }
+
+<<<<<<< HEAD
+=======
+
+=======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
     	return view('admin.login');
         // return 33333;
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
     //2 执行登录 
     public function dologin(Request $request)
     {
         // //1 验证码
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
             $mycode = session()->get("code");
             // dd($mycode);
             
@@ -52,6 +139,19 @@ class LoginController extends Controller
                         return redirect("admin/index");
                     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
                     return back()->with("msg","只需998一秒变管理");
                 }
                 return back()->with("msg","用户或密码错误");
@@ -83,4 +183,21 @@ class LoginController extends Controller
         return redirect("admin/login");
     }
 
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+}
+=======
+}
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+}
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651

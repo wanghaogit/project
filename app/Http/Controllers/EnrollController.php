@@ -1,14 +1,50 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+namespace App\Http\Controllers;
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+namespace App\Http\Controllers;
+
+=======
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 
 namespace App\Http\Controllers;
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 class EnrollController extends Controller
 {
 	//注册页面
@@ -30,7 +66,21 @@ class EnrollController extends Controller
     	$userPhone = $request->input('userPhone'); 
     	$userSex = $request->input('userSex');
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+=======
+
+>>>>>>> 29b24c01f9cc6fce1317e13838f60ecdcb2f2f02
+>>>>>>> 2dbccaee769400770dc0996e0c8c80c7c18833d9
+>>>>>>> d9e984ab7d773fa9435b46b9429d1b206dbfe651
 		// 3.执行添加
     	$data = $request->only("userName","userPass","userPhone","userSex");
     	$id = \DB::table('user')->insertGetId($data);
