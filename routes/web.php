@@ -10,8 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-// 自己做的实验;
-Route::get("lalala","lalalala");
+
 //前台登录路由
 //登录表单
 Route::get("/login","LoginController@login");
