@@ -314,6 +314,7 @@
               <ul class="treeview-menu">
                 <li><a href="{{ URL('admin/goods') }}"><i class="fa fa-circle-o"></i>查看商品信息</a></li>
                 <li><a href="{{ URL('admin/goods/create') }}"><i class="fa fa-circle-o"></i>添加</a></li>
+                <li><a href="{{ URL('admin/zhulei') }}"><i class="fa fa-circle-o"></i>添加主类</a></li>
                 <!-- <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
                 <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
                -->
@@ -448,7 +449,25 @@
         <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
       </footer>
       <!-- 页脚结束 -->
-
+      <!-- system modal start -->
+      <div id="ycf-alert" class="modal">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> [Title]</h5>
+            </div>
+            <div class="modal-body small">
+              <p>[Message]</p>
+            </div>
+            <div class="modal-footer" >
+              <button type="button" class="btn btn-primary ok" data-dismiss="modal">[BtnOk]</button>
+              <button type="button" class="btn btn-default cancel" data-dismiss="modal">[BtnCancel]</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- system modal end -->
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
@@ -462,9 +481,17 @@
     <script src="{{ asset('admins/plugins/slimScroll/jquery.slimscroll.min.js') }}"></script>
     <!-- FastClick -->
     <script src="{{ asset('admins/plugins/fastclick/fastclick.min.js') }}"></script>
+
     <!-- AdminLTE App -->
     <script src="{{ asset('admins/dist/js/app.min.js') }}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('admins/dist/js/demo.js') }}"></script>
+    <!-- 加载bootstrap的 js-->
+    <script src="{{ asset('admins/plugins/fastclick/bootsp.min.js') }}"></script>
+    <!-- 加载bootstrap的 HTML开始 -->
+      
+    <!-- 加载bootstrap的 HTML结束 -->
+    @section("myscript")
+    @show
   </body>
 </html>

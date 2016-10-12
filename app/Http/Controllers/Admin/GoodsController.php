@@ -10,13 +10,27 @@ use App\Http\Controllers\Controller;
 class GoodsController extends Controller
 {
     //商品管理后台页面
-    public function index()
+    public function index(Request $request)
     {
-    	$list = \DB::table('goods')->get();	//链接数据库
-    	// dd($list);
-
-    	return view("admin.goods.goods",["list"=>$list]);
-    	// return 3333;
+        
+         //1 获得一个连接的对象 
+        $db = \DB::table("goods")
+            ->join('typetable','goods.cid','=','typetable.id')
+            ->select('goods.*','typetable.name');
+        // dd($db);
+        //2 封装搜索条件
+        $where = [];   
+        if($request->has('name')){
+            $name = $request->input('name');
+            $where['name'] = $name;
+            $list = $db->where('goods.goodsName', 'like', "%{$name}%")->paginate(5);//实现过滤 控制器
+        }else{
+            //3 分页 
+            $list = $db->paginate(5);
+        }  
+        // dd($list);
+        //加载stu目录下的index模板 并且将$list数据添加到list中
+        return view("admin.goods.goods")->with(["list"=>$list])->with(["where"=>$where]);
     }
 
     //2 查看单条 
@@ -24,23 +38,36 @@ class GoodsController extends Controller
 	{
 
 	}
-    //3 添加信息
+     //3 添加信息
     public function create()
-	{
-		return view("admin.goods.add");
-		// return 4444;
-	}
+    {
+        //1.链接数据库查询所属类(下拉)
+        $list = \DB::table("typeTable")->where('pid','0')->get();
+        return view("admin.goods.add")->with('list',$list);
+        // return 4444;
+    }
+    //添加主类
+    public function tjzhulei()
+    {
+        // return "tianjia";
+        return view("admin.goods.tjz");
+    }
 
+   
     //4 执行添加 
     public function store(Request $request)
-	{
-		//获得指定的下标对应的值 
-
-		$data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","isBin","desCription");
-		//图片信息
-		// dd($request->file('Img'));
-
-		if($request->file("Img")){
+    {
+        // 判断输入的信息是否存在
+        // dd(!$request->has("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","desCription"));
+        if(!$request->has("cid","goodsName","shopPrice","goodsStock","isOnsale","desCription")){
+            return back()->with('msg','请输入完整信息');
+        } 
+        //获得指定的下标对应的值 
+        $data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","desCription");
+        //图片信息
+        // dd($data);
+        // dd($request->file('cid'));
+        if($request->file("Img")){
             //获取上传信息
             $file = $request->file("Img");
             // dd($file);
@@ -49,44 +76,48 @@ class GoodsController extends Controller
                 $picname = $file->getClientOriginalName(); //获取上传原文件名
                 $ext = $file->getClientOriginalExtension(); //获取上传文件名的后缀名
                 //执行移动上传文件
-                
                 $filename=time().rand(1000,9999).".".$ext;
                 $data['Img'] = $filename;
                 $file->move("./phoneImg/",$filename);
-            
             }
         }
-		// dd($data);
-		//2 写入数据库
-
-		$id = \DB::table("goods")->insertGetid($data);//执行添加返回自增ID号
-		// dd($id);
-		  //3 判断是否添加成功
+        // dd($data);
+        //2 写入数据库
+        $id = \DB::table("goods")->insertGetid($data);//执行添加返回自增ID号
+        // dd($id);
+          //3 判断是否添加成功
         if($id>0){
-            return redirect("admin/zhuan");
+            return redirect("admin/goods");
             // return "OK";
         }else{
             return "添加失败";
         }
-	}
+    }
 
-    //5 修改表单
+      //5 修改表单
     public function edit($id)
-	{
-		// // return "修改表单";
-		//  //1 获得需要修改的数据
-        $good = \DB::table("goods")->where('id',$id)->first();//获得单条信息
-        // dd($good);
-  //       //2 加载修改表单
-        return view("admin.goods.edit",['vo'=>$good]);
-	}
+    {
+        // dd($id);
+        // // return "修改表单";
+        //  //1 获得需要修改的数据
+        $db = \DB::table("goods")
+            ->join('typeTable','goods.cid','=','typeTable.id')
+            ->select('goods.*','typeTable.name')
+            ->get();
+        // dd($db);
+        //添加where条件
+        $list= $db->where('id','=',$id);
+         // dd($list);
+        //2 加载修改表单
+        return view("admin.goods.edit")->with(["db"=>$list]);
+    }
 
     //6 执行修改 
     public function update(Request $request,$id)
-	{
-		// return "OK";
-		//  //1 接收表单提交的值 
-        $data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","isBin","desCription");
+    {
+        // return "OK";
+        //  //1 接收表单提交的值 
+        $data = $request->only("goodsName","shopPrice","Img","goodsStock","isOnsale","desCription");
         // dd($data);
         // //获取上传信息
         $file = $request->file("Img");
@@ -100,13 +131,12 @@ class GoodsController extends Controller
             $data['Img'] = $filename;
             $file->move("./phoneImg/",$filename);
         }
-
-  //       //2 执行修改 
+         //2 执行修改 
         \DB::table("goods")->where("id",$id)->update($data);
         // return 555;
-  //       //3 跳
+        //3 跳
         return redirect("/admin/goods");
-	}
+    }
 
     //7 执行删除
     public function destroy($id)

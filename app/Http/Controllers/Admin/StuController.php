@@ -12,13 +12,24 @@ class StuController extends Controller
 
 	// show create store edit update destroy
     //1 查看所有
-	public function index()
+	public function index(Request $request)
 	{
-		$list = \DB::table('user')->get();//获得所有学生的信息 //数据 
-        // dd($list);
-
+		 //1 获得一个连接的对象 
+        $db = \DB::table("user");
+        // dd($db);
+        //2 封装搜索条件
+        $where = [];   
+        if($request->has('name')){
+            $name = $request->input('name');
+            $where['name'] = $name;
+            $list = $db->where('userName', 'like', "%{$name}%")->paginate(6);//实现过滤 控制器
+        }else{
+        	//3 分页 
+        	//数据 
+       		$list = $db->paginate(6);
+        }  
         //加载stu目录下的index模板 并且将$list数据添加到list中
-		return view("admin.stu.index",["list"=>$list]);
+		return view("admin.stu.index")->with(["list"=>$list])->with(["where"=>$where]);
 	}
     //2 查看单条 
 	public function show($id)
