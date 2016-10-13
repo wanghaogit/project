@@ -10,13 +10,24 @@ use App\Http\Controllers\Controller;
 class GoodsController extends Controller
 {
     //商品管理后台页面
-    public function index()
+    public function index(Request $request)
     {
-    	$list = \DB::table('goods')->get();	//链接数据库
-    	// dd($list);
-
-    	return view("admin.goods.goods",["list"=>$list]);
-    	// return 3333;
+         //1 获得一个连接的对象 
+        $db = \DB::table("goods");
+        // dd($db);
+        //2 封装搜索条件
+        $where = [];   
+        if($request->has('name')){
+            $name = $request->input('name');
+            $where['name'] = $name;
+            $list = $db->where('goodsName', 'like', "%{$name}%")->paginate(5);//实现过滤 控制器
+        }else{
+            //3 分页 
+            //数据 
+            $list = $db->paginate(5);
+        }  
+        //加载stu目录下的index模板 并且将$list数据添加到list中
+        return view("admin.goods.goods")->with(["list"=>$list])->with(["where"=>$where]);
     }
 
     //2 查看单条 
@@ -36,10 +47,12 @@ class GoodsController extends Controller
 	{
 		//获得指定的下标对应的值 
 
-		$data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","isBin","desCription");
+		$data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","desCription");
 		//图片信息
 		// dd($request->file('Img'));
-
+        if(!$request->has("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","desCription")){
+            return back()->with('msg','请输入完整信息');
+        }        
 		if($request->file("Img")){
             //获取上传信息
             $file = $request->file("Img");
@@ -86,7 +99,7 @@ class GoodsController extends Controller
 	{
 		// return "OK";
 		//  //1 接收表单提交的值 
-        $data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","isBin","desCription");
+        $data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","desCription");
         // dd($data);
         // //获取上传信息
         $file = $request->file("Img");

@@ -33,6 +33,9 @@ Route::get('/', function () {
 Route::resource("/phone","PhoneController");
 //前台电脑遍历
 Route::resource("/computer","ComputerController");
+//前台个人中心
+Route::resource("/myroom","RoomController");
+
 
 
 
@@ -68,6 +71,3 @@ Route::get('/admin',function(){
 	Route::post("admin/dologin","Admin\LoginController@dologin");
 //3 验证码
 	Route::get("admin/captcha/{tmp}","Admin\LoginController@captcha");
-
-
-

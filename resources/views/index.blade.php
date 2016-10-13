@@ -59,7 +59,7 @@
         <ul id="hw1_masthead_subinfo" class="clearfix">
                 @if(session('user'))
                    　　尊敬的： {{ session('user')->userName }}<br/>
-                  <a href="#" style="color:blue;" >个人中心</a>　　
+                  <a href="/myroom/{{ session('user')->id }}" style="color:blue;" >个人中心</a>　　
                   <a href="/logout" style="color:red;" >退出登录</a>
                 @else
                     <li><a href="http://www.huawei.com/worldwide/index.htm" id="indexheader_0_Repeater2_headLink_0" data-value="{A48DE0FC-6920-4155-B0C8-B87FA492DBDD}" title="选择区域/语言">选择区域/语言</a></li>

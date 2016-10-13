@@ -1,7 +1,7 @@
 @extends("admin.base.base")
 
 @section("content")
-	    <!-- Content Header (Page header) -->
+      <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
             信息输出表
@@ -13,7 +13,6 @@
             <li class="active">Simple</li>
           </ol>
         </section>
-
         <!-- Main content -->
         <section class="content">
           <div class="row">
@@ -23,56 +22,51 @@
                   <span class="glyphicon glyphicon-th"></span><h3 class="box-title">学生信息管理</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
+                  <!-- 搜索表单 开始-->
+                  <form form-control>
+                    <input type="text" name="name" >
+                    <input type="submit" value="查询" >
+                  </form>
+                  <!-- 搜索表单  结束 -->
                   <table class="table table-bordered">
                     <tr>
-                      <th style="width: 80px">学号</th>
-                      <th style="width: 80px">姓名</th>
-                      <th style="width: 80px">密码</th>
-                      <th style="width: 80px">性别</th>
-                      <th style="width: 80px">积分</th>
-                      <th style="width: 80px">电话</th>
-                      <th style="width: 80px">权限</th>
-                      <th style="width: 80px">头像</th>
-                      <th style="width: 80px">地址</th>
-                      <th style="width: 100px">操作</th>
+                      <th style="width: 80px;text-align:center;">学号</th>
+                      <th style="width: 80px;text-align:center;">姓名</th>
+                      <th style="width: 80px;text-align:center;">密码</th>
+                      <th style="width: 80px;text-align:center;">性别</th>
+                      <th style="width: 80px;text-align:center;">积分</th>
+                      <th style="width: 80px;text-align:center;">电话</th>
+                      <th style="width: 80px;text-align:center;">权限</th>
+                      <th style="width: 80px;text-align:center;">头像</th>
+                      <th style="width: 80px;text-align:center;">地址</th>
+                      <th style="width: 100px;text-align:center;">操作</th>
                     </tr>
                     @foreach($list as $user)
                     <tr>
-                      <td>{{ $user->id }}</td>
-                      <td>{{ $user->userName }}</td>
-                      <td>{{ $user->userPass }}</td>
-                      <td>{{ $user->userSex }}</td>
-                      <td>{{ $user->userInteral }}</td>
-                      <td>{{ $user->userPhone }}</td>
-                      <td>{{ $user->userType }}</td>
-                      <td>{{ $user->userPhoto }}</td>
-                      <td>{{ $user->userAddress }}</td>
-                      <td>
-                        <a href="javascript:doDel({{ $user->id }});">删除</a>
-                        <a href="/admin/stu/{{ $user->id }}/edit">修改</a>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->id }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userName }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userPass }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userSex }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userInteral }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userPhone }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userType }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userPhoto }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $user->userAddress }}</td>
+                      <td style="text-align:center;vertical-align:middle;">
+                        <a href="javascript:doDel({{ $user->id }});"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/admin/stu/{{ $user->id }}/edit"><span class="glyphicon glyphicon-pencil"></span></a>
                       </td>
                     </tr>
                     @endforeach
-                    
-                   
                   </table>
+                  <!-- 分页栏 -->
+                  {!! $list->appends($where)->render() !!}
                 </div><!-- /.box-body -->
                 <div class="box-footer clearfix">
-                  <ul class="pagination pagination-sm no-margin pull-right">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                  </ul>
                 </div>
               </div><!-- /.box -->
-
-             
             </div><!-- /.col -->
-    
           </div><!-- /.row -->
-        
         </section><!-- /.content -->
         <!-- 执行删除的js特效开始 -->
         <script type="text/javascript">
@@ -86,7 +80,6 @@
               myform.submit();//执行表单提交
             }
           }
-
         </script>
         <!-- 执行删除的js特效结束 -->
         <!-- 执行删除开始 -->
@@ -95,6 +88,4 @@
           <input type="hidden" name="_method" value="delete">
         </form>
         <!-- 执行删除结束 -->
-
-     
 @endsection

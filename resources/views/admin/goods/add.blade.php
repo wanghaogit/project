@@ -29,6 +29,11 @@
                 <form action="{{ URL('admin/goods') }}" role="form" class="form-horizontal" method="post" enctype="multipart/form-data">
                   <input type="hidden" name="_token" value="{{ csrf_token() }}">
                   <div class="box-body">
+                    @if(session('msg'))
+                       <p style="color:red;margin-left:300px;" >{{ session('msg') }}</p>
+                    @else
+
+                    @endif
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">类别</label>
                       <div class="col-sm-4">

@@ -23,39 +23,45 @@
                   <span class="glyphicon glyphicon-th"></span><h3 class="box-title">商品信息管理</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
+                  <!-- 搜索表单 开始-->
+                  <form form-control>
+                    <input type="text" name="name" >
+                    <input type="submit" value="查询" >
+                  </form>
+                  <!-- 搜索表单  结束 -->
                   <table class="table table-bordered">
                     <tr>
-                      <th style="width: 80px">序号</th>
-                      <th style="width: 80px">商品名称</th>
-                      <th style="width: 80px">价格</th>
-                      <th style="width: 80px">图片</th>
-                      <th style="width: 80px">库存</th>
-                      <th style="width: 80px">是否上架</th>
-                      <th style="width: 80px">删除</th>
-                      <th style="width: 80px">描述</th>
-                      <th style="width: 100px">操作</th>
+                      <th style="width: 80px;text-align:center;">序号</th>
+                      <th style="width: 80px;text-align:center;">商品名称</th>
+                      <th style="width: 80px;text-align:center;">价格</th>
+                      <th style="width: 80px;text-align:center;">图片</th>
+                      <th style="width: 80px;text-align:center;">库存</th>
+                      <th style="width: 80px;text-align:center;">状态</th>
+                      <th style="width: 80px;text-align:center;">描述</th>
+                      <th style="width: 100px;text-align:center;">操作</th>
                     </tr>
                     @foreach($list as $goods)
                     <tr>
-                      <td>{{ $goods->id }}</td>
-                      <td>{{ $goods->goodsName }}</td>
-                      <td>{{ $goods->shopPrice }}</td>
-                      <td class="dropdown user user-menu" >
-                        <img  style="height:100px;"src="{{ asset('phoneImg') }}/{{ $goods->Img }} " class="user-image" alt="User Image" >
+                      <td style="text-align:center;vertical-align:middle;">{{ $goods->id }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $goods->goodsName }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $goods->shopPrice }}</td>
+                      <td class="dropdown user user-menu" style="text-align:center;vertical-align:middle;">
+                        <img  style="height:100px;width:80px;"src="{{ asset('phoneImg') }}/{{ $goods->Img }} " class="user-image" alt="User Image" >
                       </td>
-                      <td>{{ $goods->goodsStock }}</td>
-                      <td>{{ $goods->isOnsale }}</td>
-                      <td>{{ $goods->isBin }}</td>
-                      <td>{{ $goods->desCription }}</td>
-                      <td>
-                        <a href="javascript:doDel({{ $goods->id }});">删除</a>
-                        <a href="/admin/goods/{{ $goods->id }}/edit">修改</a>
+                      <td style="text-align:center;vertical-align:middle;">{{ $goods->goodsStock }}</td>
+                      <td style="text-align:center;vertical-align:middle;">{{ ($goods->isOnsale==1)?"上架":"下架"}} </td>
+                      <td style="text-align:center;vertical-align:middle;">{{ $goods->desCription }}</td>
+                      <td style="text-align:center;vertical-align:middle;">
+                        <a href="javascript:doDel({{ $goods->id }});"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/admin/goods/{{ $goods->id }}/edit"><span class="glyphicon glyphicon-pencil"></span></a>
                       </td>
                     </tr>
                     @endforeach
                   </table>
+                  <!-- 分页栏 -->
+                  {!! $list->appends($where)->render() !!}
                 </div><!-- /.box-body -->
-                <div class="box-footer clearfix">
+                <!-- <div class="box-footer clearfix">
                   <ul class="pagination pagination-sm no-margin pull-right">
                     <li><a href="#">&laquo;</a></li>
                     <li><a href="#">1</a></li>
@@ -63,7 +69,7 @@
                     <li><a href="#">3</a></li>
                     <li><a href="#">&raquo;</a></li>
                   </ul>
-                </div>
+                </div> -->
               </div><!-- /.box -->
 
              
