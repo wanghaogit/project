@@ -320,6 +320,19 @@
                -->
              </ul>
             </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>类别管理</span>
+                <span class="label label-primary pull-right">4</span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="{{ URL('admin/chakzhulei') }}"><i class="fa fa-circle-o"></i>查看主类</a></li>
+             </ul>
+              <ul class="treeview-menu">
+                <li><a href="{{ URL('admin/zhulei') }}"><i class="fa fa-circle-o"></i>添加主类</a></li>
+             </ul>
+            </li>
             <li>
               <a href="../widgets.html">
                 <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
