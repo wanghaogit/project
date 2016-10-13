@@ -32,6 +32,9 @@
                   <table class="table table-bordered">
                     <tr>
                       <th style="width: 80px;text-align:center;">序号</th>
+
+                      <th style="width: 80px;text-align:center;">类别</th>
+
                       <th style="width: 80px;text-align:center;">商品名称</th>
                       <th style="width: 80px;text-align:center;">价格</th>
                       <th style="width: 80px;text-align:center;">图片</th>
@@ -43,6 +46,10 @@
                     @foreach($list as $goods)
                     <tr>
                       <td style="text-align:center;vertical-align:middle;">{{ $goods->id }}</td>
+
+                      <td style="text-align:center;vertical-align:middle;">{{
+                        $goods->name }}</td>
+
                       <td style="text-align:center;vertical-align:middle;">{{ $goods->goodsName }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ $goods->shopPrice }}</td>
                       <td class="dropdown user user-menu" style="text-align:center;vertical-align:middle;">

@@ -26,17 +26,20 @@
                   <span class="glyphicon glyphicon-plus"></span><h3 class="box-title">修改商品信息</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <!-- {{ URL('admin/stu/') }}/{{ $vo->id }} -->
+                 @foreach($db as $vo)
                 <form action='{{ URL("admin/goods/$vo->id") }}' role="form" class="form-horizontal" method="post" enctype="multipart/form-data">
+                @endforeach  
                   <input type="hidden" name="_method" value="put">  
                   <input type="hidden" name="_token" value="{{ csrf_token() }}">
                   <div class="box-body">
-                    <div class="form-group">
+                   
+                    <!-- <div class="form-group">
                       <label  class="col-sm-2 control-label">类别</label>
                       <div class="col-sm-4">
-                        <input type="text" name="cid" value="{{ $vo->cid }}" class="form-control">
+                        <input type="text" name="cid" value="{{ $vo->name }}" class="form-control" >
                       </div>
-                    </div>
+                    </div> -->
+                    
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">商品名</label>
                       <div class="col-sm-4">
@@ -62,29 +65,32 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label  class="col-sm-2 control-label">是否上架</label>
+                     <label  class="col-sm-2 control-label">是否上架</label>
                       <div class="col-sm-4">
-                        <input type="text" name="isOnsale" value="{{ $vo->isOnsale }}" class="form-control">
+                        <!-- <input type="text" name="isOnsale" class="form-control"> -->
+                        <input type="radio" name="isOnsale" value="1" id="up" checked="checked"/><label for="up">上架</label>
+                        <input type="radio" name="isOnsale" value="2" id="down"/><label for="down">下架</label>
                       </div>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label  class="col-sm-2 control-label">是否放入回收站</label>
                       <div class="col-sm-4">
                         <input type="text" name="isBin" value="{{ $vo->isBin }}" class="form-control">
                       </div>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">描述</label>
                       <div class="col-sm-4">
                         <input type="text" name="desCription" value="{{ $vo->desCription }}" class="form-control">
                       </div>
                     </div>
-                  </div><!-- /.box-body -->
+                    </div><!-- /.box-body -->
 
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">确认修改</button>
                     <button type="submit" class="btn btn-primary">重置</button>
                   </div>
+
                 </form>
               </div><!-- /.box -->
           
