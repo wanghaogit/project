@@ -318,22 +318,26 @@
                 <!-- <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
                 <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
 
+
                -->
              </ul>
             </li>
              <li class="treeview">
+
               <a href="#">
                 <i class="fa fa-files-o"></i>
                 <span>类别管理</span>
                 <span class="label label-primary pull-right">4</span>
               </a>
               <ul class="treeview-menu">
+
                 <li><a href="{{ URL('admin/chakzhulei') }}"><i class="fa fa-circle-o"></i>查看类别信息</a></li>
                 <li><a href="{{ URL('admin/zhulei') }}"><i class="fa fa-circle-o"></i>添加主类</a></li>
                 <!-- <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
                 <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
                 
                -->
+
              </ul>
             </li>
             <li>

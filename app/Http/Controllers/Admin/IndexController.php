@@ -15,6 +15,7 @@ class IndexController extends Controller
     	return view("admin.index.index");
     	// return "123456";
     }
+
     //执行主类添加
      public function store(Request $request)
 	{
@@ -32,4 +33,5 @@ class IndexController extends Controller
             return "添加失败";
         }
 	}	
+
 }
