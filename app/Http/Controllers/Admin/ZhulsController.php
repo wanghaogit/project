@@ -7,17 +7,20 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
+class ZhulsController extends Controller
 {
-    //网站管理后台界面
-    public function index()
-    {
-    	return view("admin.index.index");
-    	// return "123456";
-    }
-
-    //执行主类添加
-     public function store(Request $request)
+	//主类便历
+	public function chaxuu()
+	{
+		// return 12;
+		$db = \DB::table("typetable")->get();
+		
+	 
+        //加载页面
+		return view("admin.zhulei.zhulei")->with(["data"=>$db]);
+	}
+	//执行主类添加
+    public function store(Request $request)
 	{
 		// return "ads";
 		// dd($request);
@@ -32,6 +35,5 @@ class IndexController extends Controller
         }else{
             return "添加失败";
         }
-	}	
-
+	}
 }

@@ -63,8 +63,12 @@ Route::get('/admin',function(){
 		Route::get("logout","Admin\LoginController@logout");//执行退出 
 		Route::resource("stu","Admin\StuController");//用户信息增删改查
 		Route::resource("goods","Admin\GoodsController"); //商品管理
+		Route::get("chakzhulei","Admin\ZhulsController@chaxuu");//查看主类
 		Route::get("zhulei","Admin\GoodsController@tjzhulei");//添加主类
-		Route::resource("zhixzhulei","Admin\IndexController");//执行添加主类
+		Route::resource("zhixzhulei","Admin\ZhulsController");//执行添加主类
+
+		Route::resource("xiangqing","Admin\XiangqController");//详情的管理
+		Route::get("tJxiangQing/{id}","Admin\XiangqController@createjia");
 
 		// Route::get("zhuan","Admin\GoodsController@zhuan");	//成功后指向
 		Route::get("zhuan","Admin\StuController@zhuan");//执行成功的跳转

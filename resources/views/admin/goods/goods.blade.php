@@ -58,9 +58,15 @@
                       <td style="text-align:center;vertical-align:middle;">{{ $goods->goodsStock }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ ($goods->isOnsale==1)?"上架":"下架"}} </td>
                       <td style="text-align:center;vertical-align:middle;">{{ $goods->desCription }}</td>
+
+                      <!-- 查看详情 -->
                       <td style="text-align:center;vertical-align:middle;">
-                        <a href="javascript:doDel({{ $goods->id }});"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="/admin/goods/{{ $goods->id }}/edit"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="/admin/xiangqing/{{ $goods->id }}"><span class="glyphicon glyphicon-play"> 查看详情</span></a>
+                        <br>
+                        <a href="javascript:doDel({{ $goods->id }});"><span class="glyphicon glyphicon-trash"> 删除商品</span></a>
+                        <br>
+                        <a href="/admin/goods/{{ $goods->id }}/edit"><span class="glyphicon glyphicon-pencil"> 修改商品</span></a>
+
                       </td>
                     </tr>
                     @endforeach

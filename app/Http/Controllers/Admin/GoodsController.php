@@ -69,8 +69,7 @@ class GoodsController extends Controller
         //获得指定的下标对应的值 
         $data = $request->only("cid","goodsName","shopPrice","Img","goodsStock","isOnsale","desCription");
         //图片信息
-        // dd($data);
-        // dd($request->file('cid'));
+
         if($request->file("Img")){
 
             //获取上传信息
