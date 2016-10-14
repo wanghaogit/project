@@ -35,6 +35,10 @@ Route::resource("/phone","PhoneController");
 Route::resource("/computer","ComputerController");
 //前台个人中心
 Route::resource("/myroom","RoomController");
+//前台商品购买页面
+Route::get('/shopping/{id?}',"ShopController@show");
+//ajax
+Route::get('/color',"AjaxController@color");
 
 
 

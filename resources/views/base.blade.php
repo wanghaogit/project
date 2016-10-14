@@ -38,9 +38,7 @@
 
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="shortcut icon" href="http://consumer.huawei.com/en/ucmf/groups/public/documents/webasset/img_con_cn_favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="http://consumer.huawei.com/en/ucmf/groups/public/documents/webasset/img_con_cn_favicon.ico" type="image/x-icon" />
-  <link rel="bookmark" href="http://consumer.huawei.com/en/ucmf/groups/public/documents/webasset/img_con_cn_favicon.ico" type="image/x-icon" />
+  
    
  
  
@@ -321,7 +319,7 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
                   <a href="/logout" style="color:red;" >退出登录</a>
         </div>
         @else
-          <li class="login-not" id="headerLoginNot"><a class="log-link fl" href="/login"><span>登录</span></a> <span class="s-line">|</span> <a class="reg-link fl" href="/enroll"><span>注册</span></a></li>
+          <li class="login-not" id="logina"><a class="log-link fl" href="/login"><span>登录</span></a> <span class="s-line">|</span> <a class="reg-link fl" href="/enroll"><span>注册</span></a></li>
       </ul>
       @endif
       </div>
