@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class StuController extends Controller
+class PuController extends Controller
 {
 
 	// show create store edit update destroy
@@ -22,14 +22,14 @@ class StuController extends Controller
         if($request->has('name')){
             $name = $request->input('name');
             $where['name'] = $name;
-            $list = $db->where('userName', 'like', "%{$name}%",'and','userType','=','1')->paginate(3);//实现过滤 控制器
+            $list = $db->where('userName', 'like', "%{$name}%",'and','userType','=','0')->paginate(3);//实现过滤 控制器
         }else{
         	//3 分页 
         	//数据 
-       		$list = $db->where('userType','1')->paginate(3);
+       		$list = $db->where('userType','0')->paginate(3);
         }  
         //加载stu目录下的index模板 并且将$list数据添加到list中
-		return view("admin.stu.index")->with(["list"=>$list])->with(["where"=>$where]);
+		return view("admin.putong.index")->with(["list"=>$list])->with(["where"=>$where]);
 	}
     //2 查看单条 
 	public function show($id)
@@ -39,7 +39,7 @@ class StuController extends Controller
     //3 添加表单
     public function create()
 	{
-		return view("admin.stu.add");
+		return view("admin.putong.add");
 	}
 
     //4 执行添加 
@@ -66,7 +66,7 @@ class StuController extends Controller
         $stu = \DB::table("user")->where('id',$id)->first();//获得单条信息
         // dd($stu);
         //2 加载修改表单
-        return view("admin.stu.edit",['vo'=>$stu]);
+        return view("admin.putong.edit",['vo'=>$stu]);
 	}
 
     //6 执行修改 
@@ -79,7 +79,7 @@ class StuController extends Controller
         //2 执行修改 
         \DB::table("user")->where("id",$id)->update($data);
         //3 跳
-        return redirect("/admin/stu");
+        return redirect("/admin/putong");
 	}
 
     //7 执行删除
@@ -88,12 +88,12 @@ class StuController extends Controller
 		//执行删除
 		\DB::table('user')->where('id',$id)->delete();
 		//跳转
-		return redirect("admin/stu");
+		return redirect("admin/putong");
 	}
 	// 8执行成功后的跳转
 	public function zhuan()
 	{
 		// return 'lkjlkjlkj';
-		return view('admin.stu.zhuan');
+		return view('admin.putong.zhuan');
 	}
 }

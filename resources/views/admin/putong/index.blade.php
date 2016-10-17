@@ -51,18 +51,16 @@
                       </td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userInteral }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userPhone }}</td>
-
                       <td style="text-align:center;vertical-align:middle;">
-                        <a href="/admin/jiang/{{ $user->id }}">
+                         <a href="/admin/sheng/{{ $user->id }}">
                           {{ ($user->userType==1)?"管理员":"普通用户" }}
                         </a>
-                        
                       </td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userPhoto }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userAddress }}</td>
                       <td style="text-align:center;vertical-align:middle;">
                         <a href="javascript:doDel({{ $user->id }});"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="/admin/stu/{{ $user->id }}/edit"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a href="/admin/putong/{{ $user->id }}/edit"><span class="glyphicon glyphicon-pencil"></span></a>
                       </td>
                     </tr>
                     @endforeach
@@ -84,7 +82,7 @@
               //1 获得form表单节点对象
               var myform = document.myform;
               //2 设置提交方式 
-              myform.action = "{{ URL('admin/stu') }}"+"/"+id;//提交地址 
+              myform.action = "{{ URL('admin/putong') }}"+"/"+id;//提交地址 
               myform.submit();//执行表单提交
             }
           }

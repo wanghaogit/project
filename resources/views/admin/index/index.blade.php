@@ -12,48 +12,75 @@
 		    btncl:'取消'
 		  });">12314
 		</button>
-		<button onclick="javascript:doUpdate()">实验</button>
-	<script type="text/javascript">
-		function doUpdate()
-		{
-			var editForm = document.editForm;
-			editForm.action = "user_list/"+id;
-			var phoneValue = $("#userPhone"+id).html();
-			var emailValue = $("#userEmail"+id).html();
-			$("#updatePhone").val(phoneValue);
-			$("#updateEmail").val(emailValue);
-		}
-	</script>
-	<div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-       		<form action="" method="post" name="editForm">
-       			<input type="hidden" name="_token" value="{{ csrf_token() }}">
-       			<input type="hidden" name="_method" value="patch">
-	            <div class="modal-header">
-	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	                <h4 class="modal-title" id="myModalLabel">修改用户密码</h4>
-	            </div>
-	            <div class="modal-body">
-					<div class="widget-main">
-						<div>
-							<label for="form-field-8">手机号</label>
-							<input class="form-control" name="phone" id="updatePhone">
-						</div>
-						
-					</div>
-	            </div>
-	            <div class="modal-footer">
-	                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-	                <button type="submit" class="btn btn-primary">提交更改</button>
-	            </div>
-	        </form>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
+			
+		<!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            信息输出表
+            <small>表格管理</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Tables</a></li>
+            <li class="active">Simple</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <form id="fid" class="form-inline">
+             
+          </form>
+        
+        </section><!-- /.content -->
+
 @endsection
 <!-- 结尾内容 -->
 @section('myscript')
+	<script type="text/javascript">
+      //js函数 实现select option节点的加载 
+      function loadDistrict(upid){
+        $.ajax({
+          url:"{{ URL('admin/district/') }}"+"/"+upid,
+          type:"get",
+          dataType:"json",
+          success:function (data){
+            // alert(data);
+            if(data.length==0){
+              return;
+            }
 
+            var select = "<select class='form-contorl'>";
+            select +="<option value='-2'>-请选择-</option>";
+            for(var i=0;i<data.length;i++){
+              select +="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+            }
+            select +="</select>";
+
+
+            //select option 新产生的节点对象 添加到form表单中 
+            // $("#fid").append(select);
+
+            //高版本jquery不支持live 事件委派
+            // $("select").live("change",function (){   });
+
+            
+            $(select).change(function (){
+                // alert(123);
+                //清空后面所有的select节点
+                $(this).nextAll("select").remove();
+
+                var id = $(this).find("option:selected").val()
+                // alert(id);
+                loadDistrict(id);
+
+            }).appendTo('#fid');  
+          }
+        });
+      }
+
+      loadDistrict(0);
+
+  </script>
 	
 @endsection

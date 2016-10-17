@@ -328,11 +328,11 @@
 <div class="col-sm-2-4 hw1_box_wrap">
 <h3>企业产品及服务</h3>
 <ul>
- 		    <li><a href="http://e.huawei.com/cn/products/enterprise-networking/switches">交换机</a></li>
-			<li><a href="http://e.huawei.com/cn/products/enterprise-networking/routers">路由器</a></li>
-			<li><a href="http://e.huawei.com/cn/products/enterprise-networking/wlan">WLAN</a></li>
-			<li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/servers">服务器</a></li>
-            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/storage">存储</a></li>		
+            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/switches">交换机</a></li>
+            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/routers">路由器</a></li>
+            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/wlan">WLAN</a></li>
+            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/servers">服务器</a></li>
+            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/storage">存储</a></li>        
             <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/cloud-computing">云计算</a></li>
             <li><a href="http://e.huawei.com/cn/products/network-energy">网络能源</a></li>
             <li><a href="http://e.huawei.com/cn/services">服务</a></li>
@@ -379,7 +379,7 @@
     <li><a href="http://e.huawei.com/cn/partner/partner-profiles">渠道伙伴</a></li>
     <li><a href="http://e.huawei.com/cn/partner/alliance/details/strategic-partner">联盟伙伴</a></li>
     <li><a href="http://marketplace.force.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;marketplace-partner-cn-nav&#39;);">Marketplace</a></li>
-	<li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-nav&#39;);">兼容性列表</a></li>
+    <li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-nav&#39;);">兼容性列表</a></li>
 </ul>
 </div>
 <div class="col-sm-2 hw1_box_wrap">
@@ -1049,19 +1049,19 @@ Huawei P9</a></h3>
             <li><a href="http://e.huawei.com/en/solutions/industries/education">教育</a></li>
         </ul>
         </li>
-		<li class="title active"><a href="http://e.huawei.com/cn/allproduct">企业产品及服务 &gt;</a>
+        <li class="title active"><a href="http://e.huawei.com/cn/allproduct">企业产品及服务 &gt;</a>
         <ul class="ul-block">
-		    <li><a href="http://e.huawei.com/cn/products/enterprise-networking/switches">交换机</a></li>
-			<li><a href="http://e.huawei.com/cn/products/enterprise-networking/routers">路由器</a></li>
-			<li><a href="http://e.huawei.com/cn/products/enterprise-networking/wlan">WLAN</a></li>
-			<li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/servers">服务器</a></li>
-            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/storage">存储</a></li>		
+            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/switches">交换机</a></li>
+            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/routers">路由器</a></li>
+            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/wlan">WLAN</a></li>
+            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/servers">服务器</a></li>
+            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/storage">存储</a></li>        
             <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/cloud-computing">云计算</a></li>
             <li><a href="http://e.huawei.com/cn/products/network-energy">网络能源</a></li>
             <li><a href="http://e.huawei.com/cn/services">服务</a></li>
         </ul>
         </li>
-		<li class="title active"><a href="http://carrier.huawei.com/cn/products">运营商产品及服务 &gt;</a>
+        <li class="title active"><a href="http://carrier.huawei.com/cn/products">运营商产品及服务 &gt;</a>
         <ul class="ul-block">
     <li><a href="http://carrier.huawei.com/cn/products/wireless-network">无线网络</a></li>
     <li><a href="http://carrier.huawei.com/cn/products/fixed-network">固定网络</a></li>
@@ -1072,7 +1072,7 @@ Huawei P9</a></h3>
     <li><a href="http://carrier.huawei.com/cn/services">全球服务</a></li>
         </ul>
         </li>
-		<li class="title active">其它产品
+        <li class="title active">其它产品
         <ul class="ul-block">
    <li><a href="http://www.huawei.com/cn/all-products/solar">智能光伏产品</a></li>
         </ul>
@@ -1086,10 +1086,10 @@ Huawei P9</a></h3>
     <li><a href="http://consumer.huawei.com/cn/support/express-repair/index.htm">寄修服务</a></li>
     <li><a href="http://consumer.huawei.com/cn/support/reservation/index.htm">预约服务</a></li>
     <li><a href="http://consumer.huawei.com/cn/support/warranty-query/index.htm">保修状态查询</a></li>
-	<li><a href="http://consumer.huawei.com/cn/support/warranty-policy/mobile-phone/index.htm">保修政策</a></li>
+    <li><a href="http://consumer.huawei.com/cn/support/warranty-policy/mobile-phone/index.htm">保修政策</a></li>
     <li><a href="http://club.huawei.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;club-support-cn-mobile-nav&#39;);">花粉俱乐部</a></li>
     <li><a href="http://consumer.huawei.com/cn/support/service-center/index.htm">服务中心</a></li>
-	<li><a href="http://emui.huawei.com/cn/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;emui-support-cn-mobile-nav&#39;);">升级软件应用</a></li>
+    <li><a href="http://emui.huawei.com/cn/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;emui-support-cn-mobile-nav&#39;);">升级软件应用</a></li>
         </ul>
         </li>
         <li class="title active">企业用户
@@ -1132,16 +1132,16 @@ Huawei P9</a></h3>
     <li><a href="http://e.huawei.com/cn/partner/partner-profiles">渠道伙伴</a></li>
     <li><a href="http://e.huawei.com/cn/partner/alliance/details/strategic-partner">联盟伙伴</a></li>
     <li><a href="http://marketplace.force.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;marketplace-partner-cn-mobile-nav&#39;);">Marketplace</a></li>
-	<li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-mobile-nav&#39;);">兼容性列表</a></li>
+    <li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-mobile-nav&#39;);">兼容性列表</a></li>
         </ul>
         </li>
-		<li class="title active">联系合作伙伴
+        <li class="title active">联系合作伙伴
         <ul class="ul-block">
     <li><a href="http://e.huawei.com/cn/partner/find-a-partner">查找经销商</a></li>
     <li><a href="http://e.huawei.com/cn/partner/find-a-partner?&amp;partnertype=sp">查找服务商</a></li>
     <li><a href="http://enterprise.huawei.com/ilink/cnenterprise/partners/alliance-partner/collaborate-partner/index.htm">查找解决方案伙伴</a></li>        </ul>
         </li>
-		        <li class="title active">获取资源
+                <li class="title active">获取资源
         <ul class="ul-block">
   <li><a href="http://www.huawei.com/cn/partner/partner-university">合作伙伴大学</a></li>
         </ul>
@@ -1149,9 +1149,9 @@ Huawei P9</a></h3>
     </ul>
     </li>
     <li class="hw1_nomore"><a href="http://developer.huawei.com/cn/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;developer-cn-mobile-nav&#39;);">开发者</a></li>
-	<li class="hw1_nomore"><a href="http://m.vmall.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;vmall-cn-mobile-nav&#39;);">华为商城</a></li>
-	<li class="hw1_nomore"><a href="http://www.huawei.com/en/worldwide">[ 选择区域/语言 ]</a></li>
-	<li class="hw1_nomore"><a href="http://www.huawei.com/cn/my-huawei/login?redirect=http%3a%2f%2fwww.huawei.com%2fcn%2f">[ 登录 ]</a></li> 
+    <li class="hw1_nomore"><a href="http://m.vmall.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;vmall-cn-mobile-nav&#39;);">华为商城</a></li>
+    <li class="hw1_nomore"><a href="http://www.huawei.com/en/worldwide">[ 选择区域/语言 ]</a></li>
+    <li class="hw1_nomore"><a href="http://www.huawei.com/cn/my-huawei/login?redirect=http%3a%2f%2fwww.huawei.com%2fcn%2f">[ 登录 ]</a></li> 
 </ul>
 </div>
 <style>
@@ -1159,719 +1159,353 @@ Huawei P9</a></h3>
         float: left;
     }
 </style>
-<div id="footer" class="winwin-footer" style="top: initial;">
-    <div class="container">
-        <div class="top">
-            <div class="row">
-                
-                <div class="col-md-8 col-sm-12 hidden-xs">
-                    <div class="left">
-                        
+<!-- 底部开始 -->
+    <div id="footer" class="winwin-footer" style="top: initial;">
+        <div class="container">
+            <div class="top">
+                <div class="row">
+                    
+                    <div class="col-md-8 col-sm-12 hidden-xs">
+                        <div class="left">
                             
+                                
                             <div class="left_inner row">
                                 
-                                        <div class="col-sm-3">
-                                            
-                                                
-                                                    <label>
-                                                        按访问者
-                                                        
-                                                    </label>
-                                                    <ul>
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://consumer.huawei.com/cn">
-                                                                            个人用户
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://e.huawei.com/cn">
-                                                                            企业用户
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://carrier.huawei.com/cn">
-                                                                            运营商用户
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/partner" target="_parent">
-                                                                            合作伙伴
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/press-center" target="_parent">
-                                                                            新闻媒体
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://developer.huawei.com/cn/" target="_blank">
-                                                                            开发者
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://scs.huawei.com/eSupplier/" target="_blank">
-                                                                            供应商
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://career.huawei.com/recruitment/">
-                                                                            求职者
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            
-                                        </div>
-                                    
-                                        <div class="col-sm-3">
-                                            
-                                                
-                                                    <label>
-                                                        关于华为
-                                                        
-                                                    </label>
-                                                    <ul>
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/about-huawei" target="_parent">
-                                                                            公司简介
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/about-huawei/corporate-governance/corporate-governance" target="_parent">
-                                                                            公司治理
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/executives/board-of-directors" target="_parent">
-                                                                            高管信息
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/bond-investor-relations" target="_parent">
-                                                                            债券投资者关系
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/sustainability" target="_parent">
-                                                                            可持续发展
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/cyber-security" target="_parent">
-                                                                            网络安全
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/publications" target="_parent">
-                                                                            出版物
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/about-huawei/annual-report" target="_parent">
-                                                                            公司年报
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            
-                                        </div>
-                                    
-                                        <div class="col-sm-3">
-                                            
-                                                
-                                                    <label>
-                                                        新闻 &amp; 展会
-                                                        
-                                                    </label>
-                                                    <ul>
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/news" target="_parent">
-                                                                            新闻
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/psirt" target="_parent">
-                                                                            安全通告
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/events" target="_parent">
-                                                                            展会活动
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            
-                                        
+                                <div class="col-sm-3">
                                     
                                         
-                                            
+                                            <label>
+                                                按访问者
                                                 
-                                                    <label>
-                                                        
-                                                        <a target="_blank" href="http://www.huawei.com/cn/industry-insights">
-                                                            行业洞察
-                                                        </a>
-                                                    </label>
-                                                    <ul>
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/minisite/gci/cn/">
-                                                                            全球联接指数
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/better-connected-world/cn/">
-                                                                            全联接世界
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
+                                            </label>
+                                            <ul>
                                                 
-                                            
-                                        </div>
-                                    
-                                        <div class="col-sm-3">
-                                            
-                                                
-                                                    <label>
-                                                        快速链接
-                                                        
-                                                    </label>
-                                                    <ul>
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.vmall.com/">
-                                                                            华为商城
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.honor.cn/">
-                                                                            荣耀官网
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://consumer.huawei.com/cn">
+                                                                    个人用户
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huaweimarine.com/marine/">
-                                                                            华为海洋
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        </li>
+                                                    
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://forum.huawei.com/portal.php?lang=zh" target="_blank">
-                                                                            产品定义社区
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://e.huawei.com/cn">
+                                                                    企业用户
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://xinsheng.huawei.com/" target="_blank">
-                                                                            心声社区
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        </li>
+                                                    
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/Terminations" target="_parent">
-                                                                            除名查询
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://carrier.huawei.com/cn">
+                                                                    运营商用户
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/#" onclick="javascript:AlertDialog();return false;">
-                                                                            在线反馈
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        </li>
+                                                    
+                                                        <li>
                                                             
-                                                    </ul>
-                                                
-                                            
-                                        </div>
-                                    
-                            </div>
-                        
-                    </div>
-                </div>
-
-                
-                
-                <!-- mobile link bof -->
-                <div class="col-xs-12 visible-xs">
-                    <div class="left">
-                        <div class="left_inner row">
+                                                                <a href="http://www.huawei.com/cn/partner" target="_parent">
+                                                                    合作伙伴
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/press-center" target="_parent">
+                                                                    新闻媒体
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://developer.huawei.com/cn/" target="_blank">
+                                                                    开发者
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://scs.huawei.com/eSupplier/" target="_blank">
+                                                                    供应商
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://career.huawei.com/recruitment/">
+                                                                    求职者
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                            </ul>  
+                                </div>
                             
+                                <div class="col-sm-3">
+                                    
+                                        
+                                            <label>
+                                                关于华为
+                                                
+                                            </label>
+                                            <ul>
+                                                
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/about-huawei" target="_parent">
+                                                                    公司简介
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/about-huawei/corporate-governance/corporate-governance" target="_parent">
+                                                                    公司治理
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/executives/board-of-directors" target="_parent">
+                                                                    高管信息
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/bond-investor-relations" target="_parent">
+                                                                    债券投资者关系
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/sustainability" target="_parent">
+                                                                    可持续发展
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/cyber-security" target="_parent">
+                                                                    网络安全
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/publications" target="_parent">
+                                                                    出版物
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            
+                                                                <a href="http://www.huawei.com/cn/about-huawei/annual-report" target="_parent">
+                                                                    公司年报
+                                                                </a>
+                                                            
+                                                        </li>
+                                                    
+                                            </ul>
+                                </div>
+                                <!-- 替换 -->
+                                <div class="col-sm-3">
+                                     
+                                    <label>
+                                       友情链接
+                                        
+                                    </label>
+                                    <ul>
+                                        @foreach($list as $links)
+                                        <li>
+                                            <a href="{{ $links->linkAddress }}" target="_parent">
+                                              {{ $links->linkName }}
+                                            </a>
+                                        </li>
+                                         @endforeach   
+                                    </ul>
+                                </div>
                                 
-                                        
-                                            <div class="col-sm-3">
-                                                
-                                                    <label class="hasmenu">
-                                                    按访问者
-                                                    
-                                                    </label>
-                                                    <ul style="">
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://consumer.huawei.com/cn">
-                                                                            个人用户
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://e.huawei.com/cn">
-                                                                            企业用户
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://carrier.huawei.com/cn">
-                                                                            运营商用户
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/partner" target="_parent">
-                                                                            合作伙伴
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/press-center" target="_parent">
-                                                                            新闻媒体
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://developer.huawei.com/cn/" target="_blank">
-                                                                            开发者
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://scs.huawei.com/eSupplier/" target="_blank">
-                                                                            供应商
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://career.huawei.com/recruitment/">
-                                                                            求职者
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            </div>
-                                        
+                                <div class="col-sm-3">
                                     
                                         
-                                            <div class="col-sm-3">
+                                            <label>
+                                                快速链接
                                                 
-                                                    <label class="hasmenu">
-                                                    关于华为
+                                            </label>
+                                            <ul>
+                                                
+                                                        <li>
+                                                            
+                                                                <a href="http://www.vmall.com/">
+                                                                    华为商城
+                                                                </a>
+                                                            
+                                                        </li>
                                                     
-                                                    </label>
-                                                    <ul style="">
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/about-huawei" target="_parent">
-                                                                            公司简介
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/about-huawei/corporate-governance/corporate-governance" target="_parent">
-                                                                            公司治理
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://www.honor.cn/">
+                                                                    荣耀官网
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/executives/board-of-directors" target="_parent">
-                                                                            高管信息
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/bond-investor-relations" target="_parent">
-                                                                            债券投资者关系
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/sustainability" target="_parent">
-                                                                            可持续发展
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/cyber-security" target="_parent">
-                                                                            网络安全
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/publications" target="_parent">
-                                                                            出版物
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/about-huawei/annual-report" target="_parent">
-                                                                            公司年报
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            </div>
-                                        
-                                    
-                                        
-                                            <div class="col-sm-3">
-                                                
-                                                    <label class="hasmenu">
-                                                    新闻 &amp; 展会
+                                                        </li>
                                                     
-                                                    </label>
-                                                    <ul style="">
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/news" target="_parent">
-                                                                            新闻
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/psirt" target="_parent">
-                                                                            安全通告
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://www.huaweimarine.com/marine/">
+                                                                    华为海洋
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/events" target="_parent">
-                                                                            展会活动
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            </div>
-                                        
-                                    
-                                        
-                                            <div class="col-sm-3">
-                                                
-                                                    <label class="no-menu">
+                                                        </li>
                                                     
-                                                    <a target="_blank" href="http://www.huawei.com/cn/industry-insights">
-                                                        行业洞察
-                                                    </a>
-                                                    </label>
-                                                    <ul style="display:none;">
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/minisite/gci/cn/">
-                                                                            全球联接指数
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/better-connected-world/cn/">
-                                                                            全联接世界
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://forum.huawei.com/portal.php?lang=zh" target="_blank">
+                                                                    产品定义社区
+                                                                </a>
                                                             
-                                                    </ul>
-                                                
-                                            </div>
-                                        
-                                    
-                                        
-                                            <div class="col-sm-3">
-                                                
-                                                    <label class="hasmenu">
-                                                    快速链接
+                                                        </li>
                                                     
-                                                    </label>
-                                                    <ul style="">
-                                                        
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.vmall.com/">
-                                                                            华为商城
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.honor.cn/">
-                                                                            荣耀官网
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://xinsheng.huawei.com/" target="_blank">
+                                                                    心声社区
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huaweimarine.com/marine/">
-                                                                            华为海洋
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        </li>
+                                                    
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://forum.huawei.com/portal.php?lang=zh" target="_blank">
-                                                                            产品定义社区
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://www.huawei.com/cn/Terminations" target="_parent">
+                                                                    除名查询
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://xinsheng.huawei.com/" target="_blank">
-                                                                            心声社区
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                        </li>
+                                                    
+                                                        <li>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/Terminations" target="_parent">
-                                                                            除名查询
-                                                                        </a>
-                                                                    
-                                                                </li>
+                                                                <a href="http://www.huawei.com/cn/#" onclick="javascript:AlertDialog();return false;">
+                                                                    在线反馈
+                                                                </a>
                                                             
-                                                                <li>
-                                                                    
-                                                                        <a href="http://www.huawei.com/cn/#" onclick="javascript:AlertDialog();return false;">
-                                                                            在线反馈
-                                                                        </a>
-                                                                    
-                                                                </li>
-                                                            
-                                                    </ul>
-                                                
-                                            </div>
-                                        
-                                    
+                                                        </li>
+                                                    
+                                            </ul>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
-                </div>
-                <!-- mobile link eof -->
-                
 
-                
-                <div class="col-md-4 col-sm-12 col-xs-12 win-foot-border-top">
-                    <div class="footer-icon-top">
-                        <label>
-                            关注我们
-                        </label>
-                        
-                    </div>
-                    <div class="right">
-                        <ul>
+                    <div class="col-md-4 col-sm-12 col-xs-12 win-foot-border-top">
+                        <div class="footer-icon-top">
+                            <label>
+                                关注我们
+                            </label>
                             
+                        </div>
+                        <div class="right">
+                            <ul>
                                 
-                                        <li>
-                                            
-                                                <a href="http://weibo.com/huaweiweibo" target="_blank">
-                                                    <img src="./huawei_files/hw_u_396239.png" alt="" width="32" height="32">
-                                                </a>
-                                            
-                                        </li>
                                     
-                                        <li>
-                                            
-                                                <a href="http://www.linkedin.com/company/huawei" target="_blank">
-                                                    <img src="./huawei_files/logo_linkedin.png" alt="" width="32" height="28">
-                                                </a>
-                                            
-                                        </li>
-                                    
-                            
-                        </ul>
-                    </div>
-                    <div class="QR-code clearfix row mt10 hidden-xs hidden-sm">
-<div class="col-xs-4"> <img alt="" src="./huawei_files/hw_408955.jpg">
-<h4>官方微信</h4>
-</div>
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr class="hw1_hr">
-    <div class="container">
-        <div class="bottom">
-            <div class="row">
-                
-                <div class="col-sm-7 col-md-8 hidden-xs hidden-sm">
-                    <div class="bottom_left">
-                        
-                        <span id="indexfooter_2_tCopyRight">©2016 华为技术有限公司 &nbsp;&nbsp; <a href="http://www.miitbeian.gov.cn/" target="_blank">粤A2-20044005号</a></span>
-                    </div>
-                </div>
-
-                
-                <div class="col-sm-12 col-md-4">
-                    <div class="bottom_right">
-                        <ul>
-                            
+                                            <li>
+                                                
+                                                    <a href="http://weibo.com/huaweiweibo" target="_blank">
+                                                        <img src="./huawei_files/hw_u_396239.png" alt="" width="32" height="32">
+                                                    </a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                
+                                                    <a href="http://www.linkedin.com/company/huawei" target="_blank">
+                                                        <img src="./huawei_files/logo_linkedin.png" alt="" width="32" height="28">
+                                                    </a>
+                                                
+                                            </li>
+                                        
                                 
-                                        <li class="editPageButtom">
-                                            
-                                                <a href="http://www.huawei.com/cn/legal" target="_parent">
-                                                    法律声明
-                                                </a>
-                                            
-                                        </li>
-                                    
-                                        <li class="editPageButtom">
-                                            
-                                                <a href="http://www.huawei.com/cn/privacy-policy" target="_parent">
-                                                    隐私保护
-                                                </a>
-                                            
-                                        </li>
-                                    
-                                        <li class="editPageButtom">
-                                            
-                                                <a href="http://www.huawei.com/cn/contact-us" target="_parent">
-                                                    联系我们
-                                                </a>
-                                            
-                                        </li>
-                                    
-                            
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="QR-code clearfix row mt10 hidden-xs hidden-sm">
+                        <div class="col-xs-4"> 
+                            <img alt="" src="./huawei_files/hw_408955.jpg">
+                            <h4>官方微信</h4>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <hr class="hw1_hr">
+        <div class="container">
+            <!-- 需要开始 -->
+            <div class="bottom">
+                <div class="row">
+                    
+                    <div class="col-sm-7 col-md-8 hidden-xs hidden-sm">
+                        <div class="bottom_left">
+                            
+                            <span id="indexfooter_2_tCopyRight">©2016 华为技术有限公司 &nbsp;&nbsp; <a href="http://www.miitbeian.gov.cn/" target="_blank">粤A2-20044005号</a></span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-sm-12 col-md-4">
+                        <div class="bottom_right">
+                            <ul>
+                                
+                                    
+                                            <li class="editPageButtom">
+                                                
+                                                    <a href="http://www.huawei.com/cn/legal" target="_parent">
+                                                        法律声明
+                                                    </a>
+                                                
+                                            </li>
+                                        
+                                            <li class="editPageButtom">
+                                                
+                                                    <a href="http://www.huawei.com/cn/privacy-policy" target="_parent">
+                                                        隐私保护
+                                                    </a>
+                                                
+                                            </li>
+                                        
+                                            <li class="editPageButtom">
+                                                
+                                                    <a href="http://www.huawei.com/cn/contact-us" target="_parent">
+                                                        联系我们
+                                                    </a>
+                                                
+                                            </li>
+                                        
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 需要结束 -->
+        </div>
     </div>
-</div>
+<!-- 底部结束 -->
+
 
 <!--设置个性化脚本-->
 <script type="text/javascript">var digitalData={};</script>

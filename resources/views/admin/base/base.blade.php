@@ -298,11 +298,20 @@
             <li class="header">主导航</li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>用户信息管理</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> <span>管理员信息管理</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{ URL('admin/stu') }}"><i class="fa fa-circle-o"></i> 用户主页 </a></li>
-                <li><a href="{{ URL('admin/stu/create') }}"><i class="fa fa-circle-o"></i> 添加用户 </a></li>
+                <li><a href="{{ URL('admin/stu') }}"><i class="fa fa-circle-o"></i> 管理员主页 </a></li>
+                <li><a href="{{ URL('admin/stu/create') }}"><i class="fa fa-circle-o"></i> 新增管理员 </a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>普通用户信息管理</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="{{ URL('admin/putong') }}"><i class="fa fa-circle-o"></i> 普通用户主页 </a></li>
+                <li><a href="{{ URL('admin/putong/create') }}"><i class="fa fa-circle-o"></i> 新增普通用户 </a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -340,25 +349,25 @@
 
              </ul>
             </li>
-            <li>
+            <!-- <li>
               <a href="../widgets.html">
                 <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
               </a>
-            </li>
+            </li> -->
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
+                <span>友情链接</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+                <li><a href="{{ URL('admin/links') }}"><i class="fa fa-circle-o"></i> 连接管理</a></li>
+                <li><a href="{{ URL('admin/links/create') }}"><i class="fa fa-circle-o"></i> 添加链接</a></li>
+                <!-- <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+                <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li> -->
               </ul>
             </li>
-            <li class="treeview">
+           <!--  <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
                 <span>UI Elements</span>
@@ -444,12 +453,13 @@
                 </li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
               </ul>
-            </li>
-            <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            </li> -->
+            <!-- <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+             -->
           </ul>
         </section>
         <!-- /.sidebar -->
