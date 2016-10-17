@@ -12,6 +12,7 @@
 		    btncl:'取消'
 		  });">12314
 		</button>
+
 			
 		<!-- Content Header (Page header) -->
         <section class="content-header">
@@ -82,5 +83,6 @@
       loadDistrict(0);
 
   </script>
+
 	
 @endsection

@@ -1,5 +1,7 @@
 ﻿@extends("base")
 @section('content')
+<title>华为手机</title>
+
     <div id="cbg-submenu-wrapper">
       
  
@@ -285,7 +287,7 @@
                                   <div class="list-slide-action y-button">
                                     <div class="list-slide-btn y-learn-more"><a href="/cn/mobile-phones/features/huawei-nova-cn.htm" onclick="javascript:bannerga(this)" class="list-slide-a"></a></div>                                
                                       <div class="list-slide-btn y-buy-btn">
-                                        <a href="http://mm.vmall.com/nova.html?cid=10187" class="list-slide-a list-slide-buy-toggle js-banner-buy" data-pname="HUAWEI nova">
+                                        <a href="/shopping/4" class="list-slide-a list-slide-buy-toggle js-banner-buy" data-pname="HUAWEI nova">
                                     <span class="cbg-icon cbg-icon-cart-small"></span>
                                   </a>
                                 </div>
@@ -317,10 +319,6 @@
         <ul class="list-slide-nav">
               <li class="list-slide-active">
                 HUAWEI nova
-            </li>
-              <li class="list-slide-active">
-                HUAWEI P9 Plus
-            </li>
         </ul>        
 <script type="text/javascript">
 var setImgBanner = {
@@ -525,10 +523,7 @@ function bannerga(t){
 <div class="list-items" style="display:block;">
         <div class="list-item" data-class="" dDocName='P9-CN'  >
           <div class="list-item-images">
-
                                <a href="/shopping/{{ $goods->id }}"><img class="list-item-bg" alt="" src="phoneImg/14763241496312.jpg"></a>
-
-               
                                 <a href="/shopping/{{ $goods->id }}"><img class="list-item-image" alt="" src="phoneImg/{{ $goods->Img }}"></a>
                             
           </div>
@@ -629,7 +624,7 @@ function bannerga(t){
             <li class="col-1">
                 <h3>购买产品</h3>
                 <ul>
-                    <li><a href="http://consumer.huawei.com/cn/mobile-phones/index.htm">智能手机</a></li>
+                    <li><a href="{{ URL('/phone') }}">智能手机</a></li>
                     <li><a href="http://consumer.huawei.com/cn/tablets/index.htm">笔记本&平板</a></li>
                     <li><a href="http://consumer.huawei.com/cn/wearables/index.htm">智能穿戴</a></li>
                     <li><a href="http://consumer.huawei.com/cn/mobile-broadband/mobile-wifi/index.htm">移动宽带</a></li>

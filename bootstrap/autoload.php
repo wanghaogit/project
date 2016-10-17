@@ -2,6 +2,9 @@
 
 define('LARAVEL_START', microtime(true));
 
+// const CLOSE = '0';
+// define('CLOSE','1');
+
 /*
 |--------------------------------------------------------------------------
 | Register The Composer Auto Loader

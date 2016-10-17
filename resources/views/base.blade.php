@@ -17,7 +17,6 @@
 
    var ssUrlType = "2";
 
-   
 
    var g_navNode_Path = new Array();
 
@@ -32,21 +31,8 @@
    var g_strLanguageId = "en";
 
 </script>
-
-
-
-
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  
-   
- 
- 
- 
- 
- 
-  
-      
+
   <!--node label-->
 <!--header & footer-->
 <!--for compare parms-->
@@ -294,12 +280,14 @@ var LAG_HOME_Fos_banner5 = "Home-follow us-huafans weibo";
     <div id="cbg-main-nav" class="cbg-centered">
       <div class="cbg-overlay"></div>
       <div class="cbg-wrapper">
-        <a href="http://consumer.huawei.com/cn/index.htm?tag=pc" class="logo">
+
+        <a href="/" class="logo">
           <h3>华为 HUAWEI</h3>
         </a>
         <ul class="cbg-inline">
-          <li><a href="http://consumer.huawei.com/cn/mobile-phones/index.htm" data-submenu="1"><span>智能手机</span></a></li>
-          <li><a href="http://consumer.huawei.com/cn/tablets/index.htm" data-submenu="2"><span>笔记本&平板</span></a></li>
+          <li><a href="{{ URL('/phone') }}" data-submenu="1"><span>智能手机</span></a></li>
+          <li><a href="{{ URL('/computer') }}" data-submenu="2"><span>笔记本&平板</span></a></li>
+
           <li><a href="http://consumer.huawei.com/cn/wearables/index.htm" data-submenu="3"><span>穿戴设备</span></a></li>
           <li><a href="javascript:void(0)" data-submenu="5"><span>更多产品 <em></em></span></a></li>
           <li><a href="javascript:void(0)" data-submenu="4"><span>软件应用</span></a></li>

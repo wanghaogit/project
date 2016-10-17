@@ -46,6 +46,7 @@
                       <td style="text-align:center;vertical-align:middle;">{{ $user->id }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userName }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userPass }}</td>
+
                       <td style="text-align:center;vertical-align:middle;">
                         {{ ($user->userSex==0)?"女":"男" }}
                       </td>
@@ -58,6 +59,7 @@
                         </a>
                         
                       </td>
+
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userPhoto }}</td>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->userAddress }}</td>
                       <td style="text-align:center;vertical-align:middle;">

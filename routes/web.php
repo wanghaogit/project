@@ -10,10 +10,12 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
 // 实验ajax
 Route::get("/ajax",function(){
 	return view("admin.ajax");
 });
+
 
 //前台登录路由
 //登录表单
@@ -30,11 +32,15 @@ Route::get("/enroll","EnrollController@enroll");
 //执行注册
 Route::resource("/doenroll","EnrollController");
 
-// Route::get('/', function () {
-//     return view('index');
-// });
+
+Route::get('/', function () {
+	return view('index');
+});
 //页面(查询友情链接)
 Route::get("/","LinkController@index");
+
+//前台订单表单
+Route::get("/ding","DingController@ding");
 
 // 前台手机遍历
 Route::resource("/phone","PhoneController");
@@ -47,17 +53,15 @@ Route::get('/shopping/{id?}',"ShopController@show");
 //ajax
 Route::get('/color',"AjaxController@color");
 
-
-
-
-
-
-
+//ajax订单生成
+Route::get('/order','AjaxController@order');
 
 
 Route::get('/admin',function(){
 	return view('admin.login');
 });
+
+
 
 //查看验证码
 // Route::get("code/{tttttmp}","DemoController@captcha");
@@ -66,13 +70,16 @@ Route::get('/admin',function(){
 	Route::group(["prefix"=>"admin","middleware"=>"myauth"],function(){
 		Route::get("/district/{upid?}","Admin\DistrictController@find");
 
+
 		Route::get("index","Admin\IndexController@index");//网站后台首页
 
 		Route::get("logout","Admin\LoginController@logout");//执行退出 
+
 		Route::resource("stu","Admin\StuController");//管理员信息增删改查
 		Route::get("jiang/{id}","Admin\JiangController@index");//降级为普通用户的
 		Route::get("sheng/{id}","Admin\ShengController@index");//升级为普通用户的
 		Route::resource("putong","Admin\PuController");//普通信息增删改查
+
 		Route::resource("goods","Admin\GoodsController"); //商品管理
 		Route::get("chakzhulei","Admin\ZhulsController@chaxuu");//查看主类
 		Route::get("zhulei","Admin\GoodsController@tjzhulei");//添加主类
@@ -84,9 +91,9 @@ Route::get('/admin',function(){
 
 		// Route::get("zhuan","Admin\GoodsController@zhuan");	//成功后指向
 		Route::get("zhuan","Admin\StuController@zhuan");//执行成功的跳转
-
+		Route::get("on","Admin\GoodsController@onoff");
+		Route::post("change","Admin\GoodsController@doonoff");
 	});
-
 
 //1 登录表单 
 	Route::get("admin/login","Admin\LoginController@login");

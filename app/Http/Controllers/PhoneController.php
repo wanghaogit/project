@@ -12,7 +12,7 @@ class PhoneController extends Controller
     public function index()
     {
     	//获得所有手机信息
-    	$list = \DB::table('goods')->get();//信息传回去，叫$list
+    	$list = \DB::table('goods')->where('cid',1)->get();//信息传回去，叫$list
     	// dd($list);
 
     	//加载手机列表视图

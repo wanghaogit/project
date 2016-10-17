@@ -238,9 +238,19 @@ $("body").addClass("cbg insert-cbg-header sc detail");
 				    </div>
 				</div>
 				<br/><br/><br/><br/><br/><br/>
+
+				@if(session('user'))
+				
 				<button class="btn btn-block btn-warning btn-lg" id='gwc'>加入购物车</button>
+			
 				<br/><br/>
-				<button class="btn btn-block btn-danger btn-lg">立即下单</button>
+				
+				<button id='order' class="btn btn-block btn-danger btn-lg">立即下单</button>
+			
+				@else
+				<h1>请登录后购买</h1>
+				@endif
+
                     <!-- dbank温馨提示 -->
                     <div class="pro-tips-area"  id="pro-msg" style="display: none;" >
                     	<div class="tips-style-2 tips-area">
@@ -753,6 +763,31 @@ ec.ready(function(){
 		// 	},
 		// });
 	});
+
+	//订单生成
+	$('#order').click(function(){
+
+	var name = $('#span1').html();
+	var color = $('#span2').html();
+	var zs = $('#span3').html();
+	var rl = $('#span4').html();
+	$.ajax({
+		url:'order',
+		type:'get',
+		async:'true',
+		data:{name:name,color:color,zs:zs,rl:rl},
+		dataType:'html',
+		success:function(data){
+			alert(data);
+		},
+		error:function(){
+			alert(2);
+		}
+	});
+	// alert(name+color+zs+rl);  成功了
+
+	});
+
 
 </script>
 </html>

@@ -22,11 +22,13 @@ class StuController extends Controller
         if($request->has('name')){
             $name = $request->input('name');
             $where['name'] = $name;
+
             $list = $db->where('userName', 'like', "%{$name}%",'and','userType','=','1')->paginate(3);//实现过滤 控制器
         }else{
         	//3 分页 
         	//数据 
        		$list = $db->where('userType','1')->paginate(3);
+
         }  
         //加载stu目录下的index模板 并且将$list数据添加到list中
 		return view("admin.stu.index")->with(["list"=>$list])->with(["where"=>$where]);

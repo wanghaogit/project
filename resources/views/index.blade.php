@@ -1,3 +1,7 @@
+@if($on->on==0)
+<center><h1>网站维护中，请谅解！</h1></center>
+<title>华为网站维护中</title>
+@elseif($on->on==1)
 <!DOCTYPE html>
 <!-- saved from url=(0025)http://www.huawei.com/cn/ -->
 <html xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -160,7 +164,7 @@
 </div>
 <div class="col-sm-9">
 <ul>
-    <li><a href="/phone">浏览智能手机</a></li>
+    <li><a href="{{ URL('/phone') }}">浏览智能手机</a></li>
     <li><a href="http://www.vmall.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Outbound Links&#39;, &#39;buysmartphones-cn-iwt-nav&#39;);">购买手机产品</a></li>
     <li><a href="http://consumer.huawei.com/cn/support/index.htm">获取技术支持</a></li>
     <li><a href="http://consumer.huawei.com/cn/support/service-center/index.htm">查找销售门店</a></li>
@@ -328,11 +332,11 @@
 <div class="col-sm-2-4 hw1_box_wrap">
 <h3>企业产品及服务</h3>
 <ul>
-            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/switches">交换机</a></li>
-            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/routers">路由器</a></li>
-            <li><a href="http://e.huawei.com/cn/products/enterprise-networking/wlan">WLAN</a></li>
-            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/servers">服务器</a></li>
-            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/storage">存储</a></li>        
+ 		    <li><a href="http://e.huawei.com/cn/products/enterprise-networking/switches">交换机</a></li>
+			<li><a href="http://e.huawei.com/cn/products/enterprise-networking/routers">路由器</a></li>
+			<li><a href="http://e.huawei.com/cn/products/enterprise-networking/wlan">WLAN</a></li>
+			<li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/servers">服务器</a></li>
+            <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/storage">存储</a></li>		
             <li><a href="http://e.huawei.com/cn/products/cloud-computing-dc/cloud-computing">云计算</a></li>
             <li><a href="http://e.huawei.com/cn/products/network-energy">网络能源</a></li>
             <li><a href="http://e.huawei.com/cn/services">服务</a></li>
@@ -379,7 +383,7 @@
     <li><a href="http://e.huawei.com/cn/partner/partner-profiles">渠道伙伴</a></li>
     <li><a href="http://e.huawei.com/cn/partner/alliance/details/strategic-partner">联盟伙伴</a></li>
     <li><a href="http://marketplace.force.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;marketplace-partner-cn-nav&#39;);">Marketplace</a></li>
-    <li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-nav&#39;);">兼容性列表</a></li>
+	<li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-nav&#39;);">兼容性列表</a></li>
 </ul>
 </div>
 <div class="col-sm-2 hw1_box_wrap">
@@ -1073,6 +1077,7 @@ Huawei P9</a></h3>
         </ul>
         </li>
         <li class="title active">其它产品
+
         <ul class="ul-block">
    <li><a href="http://www.huawei.com/cn/all-products/solar">智能光伏产品</a></li>
         </ul>
@@ -1132,10 +1137,10 @@ Huawei P9</a></h3>
     <li><a href="http://e.huawei.com/cn/partner/partner-profiles">渠道伙伴</a></li>
     <li><a href="http://e.huawei.com/cn/partner/alliance/details/strategic-partner">联盟伙伴</a></li>
     <li><a href="http://marketplace.force.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;marketplace-partner-cn-mobile-nav&#39;);">Marketplace</a></li>
-    <li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-mobile-nav&#39;);">兼容性列表</a></li>
+	<li><a href="http://support-open.huawei.com/ready/pages/user/compatibility/ready-certificates.jsf" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;readycertificates-partner-cn-mobile-nav&#39;);">兼容性列表</a></li>
         </ul>
         </li>
-        <li class="title active">联系合作伙伴
+		<li class="title active">联系合作伙伴
         <ul class="ul-block">
     <li><a href="http://e.huawei.com/cn/partner/find-a-partner">查找经销商</a></li>
     <li><a href="http://e.huawei.com/cn/partner/find-a-partner?&amp;partnertype=sp">查找服务商</a></li>
@@ -1506,7 +1511,6 @@ Huawei P9</a></h3>
     </div>
 <!-- 底部结束 -->
 
-
 <!--设置个性化脚本-->
 <script type="text/javascript">var digitalData={};</script>
 
@@ -1769,3 +1773,4 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
 
 <div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><a id="fancyboxHandle-worldwide" class="hidden"></a><a href="http://www.huawei.com/cn/#" id="fancyboxHandle"></a><a href="http://www.huawei.com/cn/#" id="play_video_fancyboxTag"></a><script async="" src="./huawei_files/172405"></script></body></html>
+@endif

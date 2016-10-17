@@ -15,4 +15,11 @@ class AjaxController extends Controller
     	$Pic = \DB::table('goodsInfo')->where('id',$request->id)->get();
     	return $Pic;
     }
+
+    //订单生成
+    public function order(Request $request)
+    {
+    	return $request;
+    }
+
 }

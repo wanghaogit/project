@@ -159,4 +159,20 @@ class GoodsController extends Controller
 		// return 'lkjlkjlkj';
 		return view('admin.goods.zhuan');
 	}
+
+        //网站开关显示视图
+    public function onoff()
+    {
+        return view('admin.on.on');
+    }
+    public function doonoff(Request $request)
+    {
+    // $data = $request;
+    $data = $request->only('on');
+    // dd($data);
+       \DB::table("peizhi")->where("id",'1')->update($data);
+       return back();
+       // dd($v);
+    }
+
 }
