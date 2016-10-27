@@ -65,6 +65,7 @@
                    　　尊敬的： {{ session('user')->userName }}<br/>
                   <a href="/myroom/{{ session('user')->id }}" style="color:blue;" >个人中心</a>　　
                   <a href="/logout" style="color:red;" >退出登录</a>
+                  <a href="/carpage" style="color:orange;" >购物车</a>
                 @else
                     <li><a href="http://www.huawei.com/worldwide/index.htm" id="indexheader_0_Repeater2_headLink_0" data-value="{A48DE0FC-6920-4155-B0C8-B87FA492DBDD}" title="选择区域/语言">选择区域/语言</a></li>
                     
@@ -113,7 +114,7 @@
                         
                             
                             <li>
-                                <a data-menutype="megamenu" data-section="hwmm4" href="http://developer.huawei.com/cn/">
+                                <a data-menutype="megamenu" data-section="hwmm4" href="{{  URL('/Kai') }}">
                                     开发者
                                 </a>
                             </li>
@@ -579,171 +580,135 @@ Huawei P9</a></h3>
 <!-- BANNER_END -->
 
 
-<!-- CARD_BEGIN -->
+<!-- 图片开始 -->
 <div id="hw1_card_list" class="lg-container">
+        <!-- 第一行开始 -->
         <div class="row">
             <div class="col-sm-6">
-                
-    <div class="hw1_multi_img animate-item animate-start" style="display:block;">
-        <div class="hw1_img" style="display:block;">
-            <a href="http://consumer.huawei.com/cn/tablets/matebook/index.html">
-                <img src="./huawei_files/竖版928-933-mate-book.jpg" class="img-responsive" alt="">
-            </a>
-        </div>
-        <div class="hw1_img_subinfo" style="display:block;">
-            <a href="http://consumer.huawei.com/cn/tablets/matebook/index.html">
-                <div class="hw1_img_wrap">
-                    <h3>
-                        开启时尚新商务
-                    </h3>
-                    <p>第六代智能英特尔® 酷睿™ m7 处理器，畅享从容生活</p>
+                <div class="hw1_multi_img animate-item animate-start" style="display:block;">
+                    <div class="hw1_img" style="display:block;">
+                        <a href="http://consumer.huawei.com/cn/tablets/matebook/index.html">
+                            <img src="./huawei_files/竖版928-933-mate-book.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="hw1_img_subinfo" style="display:block;">
+                        <a href="http://consumer.huawei.com/cn/tablets/matebook/index.html">
+                            <div class="hw1_img_wrap">
+                                <h3>
+                                    开启时尚新商务
+                                </h3>
+                                <p>第六代智能英特尔® 酷睿™ m7 处理器，畅享从容生活</p>
+                            </div>
+                        </a>
+                    </div>
+                    <section class="">
+                        <div class=""></div>
+                    </section>
+                    <input id="hideDataSourceID" type="hidden" value="{E0727BD6-026F-44CA-9670-46567C72629F}">
+                    <input id="hideTargetUrl" type="hidden" value="">
+                    <input id="hideViewModel" type="hidden" value="True">
+                    <input id="hideHuaweiName" type="hidden" value="">
+                    <input id="hideHuaweiValue" type="hidden" value="">
+                    <input id="hideTargetId" type="hidden" value="">
                 </div>
-            </a>
-        </div>
-        <section class="">
-            <div class=""></div>
-        </section>
-        <input id="hideDataSourceID" type="hidden" value="{E0727BD6-026F-44CA-9670-46567C72629F}">
-        <input id="hideTargetUrl" type="hidden" value="">
-        <input id="hideViewModel" type="hidden" value="True">
-        <input id="hideHuaweiName" type="hidden" value="">
-        <input id="hideHuaweiValue" type="hidden" value="">
-        <input id="hideTargetId" type="hidden" value="">
-    </div>
-
-
             </div>
             <div class="col-sm-6">
                 <div class="row">
                     <div class="col-sm-12">
-                        
-    <div class="hw1_multi_img animate-item animate-start animate-delay-1" style="display:block;">
-        <div class="hw1_img" style="display:block;">
-            <a href="http://enterprise.huawei.com/topic/leading-new-ict-cn/index.html?utm_campaign=lni2016q3&amp;utm_medium=hwdc&amp;utm_source=ebghome&amp;source=eebghq161109a">
-                <img src="./huawei_files/leading_new_ict.jpeg" class="img-responsive" alt="">
-            </a>
-        </div>
-        <div class="hw1_img_subinfo" style="display:block;">
-            <a href="http://enterprise.huawei.com/topic/leading-new-ict-cn/index.html?utm_campaign=lni2016q3&amp;utm_medium=hwdc&amp;utm_source=ebghome&amp;source=eebghq161109a">
-                <div class="hw1_img_wrap">
-                    <h3>
-                        引领新ICT
-                    </h3>
-                    <p>使能行业数字化转型</p>
-                </div>
-            </a>
-        </div>
-        <section class="">
-            <div class=""></div>
-        </section>
-        <input id="hideDataSourceID" type="hidden" value="{43CD8D18-DACC-4FD4-BA9A-0D86D20A5770}">
-        <input id="hideTargetUrl" type="hidden" value="">
-        <input id="hideViewModel" type="hidden" value="True">
-        <input id="hideHuaweiName" type="hidden" value="">
-        <input id="hideHuaweiValue" type="hidden" value="">
-        <input id="hideTargetId" type="hidden" value="">
-    </div>
-
-
+                        <div class="hw1_multi_img animate-item animate-start animate-delay-1" style="display:block;">
+                            <div class="hw1_img" style="display:block;">
+                                <a href="http://enterprise.huawei.com/topic/leading-new-ict-cn/index.html?utm_campaign=lni2016q3&amp;utm_medium=hwdc&amp;utm_source=ebghome&amp;source=eebghq161109a">
+                                    <img src="./huawei_files/leading_new_ict.jpeg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="hw1_img_subinfo" style="display:block;">
+                                <a href="http://enterprise.huawei.com/topic/leading-new-ict-cn/index.html?utm_campaign=lni2016q3&amp;utm_medium=hwdc&amp;utm_source=ebghome&amp;source=eebghq161109a">
+                                    <div class="hw1_img_wrap">
+                                        <h3>
+                                            引领新ICT
+                                        </h3>
+                                        <p>使能行业数字化转型</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <section class="">
+                                <div class=""></div>
+                            </section>
+                            <input id="hideDataSourceID" type="hidden" value="{43CD8D18-DACC-4FD4-BA9A-0D86D20A5770}">
+                            <input id="hideTargetUrl" type="hidden" value="">
+                            <input id="hideViewModel" type="hidden" value="True">
+                            <input id="hideHuaweiName" type="hidden" value="">
+                            <input id="hideHuaweiValue" type="hidden" value="">
+                            <input id="hideTargetId" type="hidden" value="">
+                        </div>
                     </div>
                     <div class="col-sm-12">
-                        
-    <div class="hw1_multi_img animate-item animate-start" style="display:block;">
-        <div class="hw1_img" style="display:block;">
-            <a href="http://carrier.huawei.com/cn/spotlight">
-                <img src="./huawei_files/spotlight.jpg" class="img-responsive" alt="">
-            </a>
-        </div>
-        <div class="hw1_img_subinfo" style="display:block;">
-            <a href="http://carrier.huawei.com/cn/spotlight">
-                <div class="hw1_img_wrap">
-                    <h3>
-                        迈向全联接世界的开放之路
-                    </h3>
-                    <p>华为愿意和行业伙伴们一起在迈向全联接世界的开放之路上合作共赢，构建开放数字生态圈 </p>
-                </div>
-            </a>
-        </div>
-        <section class="">
-            <div class=""></div>
-        </section>
-        <input id="hideDataSourceID" type="hidden" value="{C370ECCC-3838-4500-B37D-A838EE588C93}">
-        <input id="hideTargetUrl" type="hidden" value="">
-        <input id="hideViewModel" type="hidden" value="True">
-        <input id="hideHuaweiName" type="hidden" value="">
-        <input id="hideHuaweiValue" type="hidden" value="">
-        <input id="hideTargetId" type="hidden" value="">
-    </div>
-
-
+                        <div class="hw1_multi_img animate-item animate-start" style="display:block;">
+                            <div class="hw1_img" style="display:block;">
+                                <a href="http://carrier.huawei.com/cn/spotlight">
+                                    <img src="./huawei_files/spotlight.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="hw1_img_subinfo" style="display:block;">
+                                <a href="http://carrier.huawei.com/cn/spotlight">
+                                    <div class="hw1_img_wrap">
+                                        <h3>
+                                            迈向全联接世界的开放之路
+                                        </h3>
+                                        <p>华为愿意和行业伙伴们一起在迈向全联接世界的开放之路上合作共赢，构建开放数字生态圈 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <section class="">
+                                <div class=""></div>
+                            </section>
+                            <input id="hideDataSourceID" type="hidden" value="{C370ECCC-3838-4500-B37D-A838EE588C93}">
+                            <input id="hideTargetUrl" type="hidden" value="">
+                            <input id="hideViewModel" type="hidden" value="True">
+                            <input id="hideHuaweiName" type="hidden" value="">
+                            <input id="hideHuaweiValue" type="hidden" value="">
+                            <input id="hideTargetId" type="hidden" value="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 第一行结束 -->
+        <!-- 第二行开始 -->
         <div class="row">
+           @foreach($write as $indexpic)
             <div class="col-sm-6">
-                
-    <div class="hw1_multi_img animate-item animate-start" style="display:block;">
-        <div class="hw1_img" style="display:block;">
-            <a href="http://www.huawei.com/cn/industry-insights/market-trends/telecom-trends/ken-hu-speech">
-                <img src="./huawei_files/banner_huzong.jpg" class="img-responsive" alt="">
-            </a>
-        </div>
-        <div class="hw1_img_subinfo" style="display:block;">
-            <a href="http://www.huawei.com/cn/industry-insights/market-trends/telecom-trends/ken-hu-speech">
-                <div class="hw1_img_wrap">
-                    <h3>
-                        华为轮值CEO胡厚崑：站在云端看世界
-                    </h3>
-                    <p>下一个十年，将是云的2.0时代，企业是云化的主角，各行各业将在云中成长，各种行业云也将兴起。</p>
+                <div class="hw1_multi_img animate-item animate-start" style="display:block;">
+                    <div class="hw1_img" style="display:block;">
+                        <a href="http://www.huawei.com/cn/industry-insights/market-trends/telecom-trends/ken-hu-speech">
+                            <img src="{{ asset('phoneImg') }}/{{$indexpic->photo }}" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="hw1_img_subinfo" style="display:block;">
+                        <a href="http://www.huawei.com/cn/industry-insights/market-trends/telecom-trends/ken-hu-speech">
+                            <div class="hw1_img_wrap">
+                                <h3>
+                                   {{ $indexpic->btitle }}
+                                </h3>
+                                <p>{{ $indexpic->stitle }}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <section class="">
+                        <div class=""></div>
+                    </section>
+                    <input id="hideDataSourceID" type="hidden" value="{EBF2FD0D-050B-4BCB-9B5B-9EF1DC061B75}">
+                    <input id="hideTargetUrl" type="hidden" value="">
+                    <input id="hideViewModel" type="hidden" value="True">
+                    <input id="hideHuaweiName" type="hidden" value="">
+                    <input id="hideHuaweiValue" type="hidden" value="">
+                    <input id="hideTargetId" type="hidden" value="">
                 </div>
-            </a>
-        </div>
-        <section class="">
-            <div class=""></div>
-        </section>
-        <input id="hideDataSourceID" type="hidden" value="{EBF2FD0D-050B-4BCB-9B5B-9EF1DC061B75}">
-        <input id="hideTargetUrl" type="hidden" value="">
-        <input id="hideViewModel" type="hidden" value="True">
-        <input id="hideHuaweiName" type="hidden" value="">
-        <input id="hideHuaweiValue" type="hidden" value="">
-        <input id="hideTargetId" type="hidden" value="">
-    </div>
-
-
             </div>
-            <div class="col-sm-6">
-                
-    <div class="hw1_multi_img animate-item animate-start animate-delay-1" style="display:block;">
-        <div class="hw1_img" style="display:block;">
-            <a href="http://e.huawei.com/cn/solutions/technical/sdn">
-                <img src="./huawei_files/02_smart_city.jpg" class="img-responsive" alt="">
-            </a>
+            @endforeach
+        
         </div>
-        <div class="hw1_img_subinfo" style="display:block;">
-            <a href="http://e.huawei.com/cn/solutions/technical/sdn">
-                <div class="hw1_img_wrap">
-                    <h3>
-                        SDN重构企业网络架构：开放、简单、安全 
-                    </h3>
-                    <p>这是真正变革的SDN，在实现网络架构灵活搭建的同时，更可以应需而变，加速业务创新。</p>
-                </div>
-            </a>
-        </div>
-        <section class="">
-            <div class=""></div>
-        </section>
-        <input id="hideDataSourceID" type="hidden" value="{1CE64B46-BE6C-4801-B660-C02AD4281822}">
-        <input id="hideTargetUrl" type="hidden" value="">
-        <input id="hideViewModel" type="hidden" value="True">
-        <input id="hideHuaweiName" type="hidden" value="">
-        <input id="hideHuaweiValue" type="hidden" value="">
-        <input id="hideTargetId" type="hidden" value="">
-    </div>
-
-
-            </div>
-        </div>
+        <!-- 第二行结束 -->
 </div>
 <!-- CARD_END -->
 
@@ -1153,7 +1118,7 @@ Huawei P9</a></h3>
         </li>
     </ul>
     </li>
-    <li class="hw1_nomore"><a href="http://developer.huawei.com/cn/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;developer-cn-mobile-nav&#39;);">开发者</a></li>
+    <li ><a href="{{ URL('/Kai') }}" >开发者</a></li>
     <li class="hw1_nomore"><a href="http://m.vmall.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;homepageclick&#39;, &#39;vmall-cn-mobile-nav&#39;);">华为商城</a></li>
     <li class="hw1_nomore"><a href="http://www.huawei.com/en/worldwide">[ 选择区域/语言 ]</a></li>
     <li class="hw1_nomore"><a href="http://www.huawei.com/cn/my-huawei/login?redirect=http%3a%2f%2fwww.huawei.com%2fcn%2f">[ 登录 ]</a></li> 

@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html><head><iframe src="javascript:false" style="display: none;"></iframe><script id="ha" async="" src="list/ha.js"></script>
+<html><head><iframe src="javascript:false" style="display: none;"></iframe><script id="ha" async="" src="{{ asset('huawei_files/ha.js') }}"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Language" content="zh-cn">
 <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=utf-8">
-<script src="list/analytics.js" async=""></script><script>
+<script src="{{ asset('huawei_files/analytics.js') }}" async=""></script><script>
 var domainMain = 'http://shopcn.huawei.com';
 var domainWap = 'http://m.vmall.com';
 var domainCart = 'http://shopcn-cart.huawei.com';
@@ -44,21 +44,21 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 </script> -->
 <title>确认订单华为</title>
 <link rel="shortcut icon" href="http://www.vmall.com/favicon.ico">
-<link href="list/ec.css" rel="stylesheet" type="text/css">
-<link href="list/css_con_cn_ht_share_002.css" rel="stylesheet" type="text/css">
+<link href="{{ asset('huawei_files/ec.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('huawei_files/css_con_cn_ht_share_002.css') }}" rel="stylesheet" type="text/css">
 
-<link href="list/main.css" rel="stylesheet" type="text/css">
-<link href="list/css_con_cn_ht_share.css" rel="stylesheet" type="text/css">
-<script src="list/jsapi.js" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
+<link href="{{ asset('huawei_files/main.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('huawei_files/css_con_cn_ht_share.css') }}" rel="stylesheet" type="text/css">
+<script src="{{ asset('huawei_files/jsapi.js') }}" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
 <!--[if lt IE 9 ]>
 <script type="text/javascript" src="http://www.huawei.com/Assets/CBG/js/respond.min.js"></script>
 <![endif]-->
-<script src="list/script_dev_en_jquery_min.js"></script>
-<script src="list/ec_002.js"></script> 
-<script src="list/ec.js"></script> 
+<script src="{{ asset('huawei_files/script_dev_en_jquery_min.js') }}"></script>
+<script src="{{ asset('huawei_files/ec_002.js') }}"></script> 
+<script src="{{ asset('huawei_files/ec.js') }}"></script> 
 <!--[if lt IE 9]><script src="http://shopcn-res.huaweistatic.com/integration/js/common/html5shiv.js"></script> <![endif]-->
-<script src="list/script_con_cn_ht_share.js"></script>
-<script src="list/pc-g-analytics.js"></script>
+<script src="{{ asset('huawei_files/script_con_cn_ht_share.js') }}"></script>
+<script src="{{ asset('huawei_files/pc-g-analytics.js') }}"></script>
 
 <script>
 function titleSearch() {
@@ -91,7 +91,7 @@ $(function () {
 <body class="wide order cbg insert-cbg-header">
 
 <input id="casLoginUrl" name="casLoginUrl" value="https://hwid1.vmall.com/CAS/remoteLogin?loginChannel=27000000&amp;reqClientType=27&amp;loginUrl=http%3A%2F%2Fconsumer.huawei.com%2Fcn%2Faccount%2Flogin%2Findex.htm&amp;service=http%3A%2F%2Fshopcn.huawei.com%2Faccount%2Fcaslogin%3Furl%3D" type="hidden">
-<script src="list/base.js"></script>
+<script src="{{ asset('huawei_files/base.js') }}"></script>
 <script>
 ec.mediaPath = "http://shopcn-res.huaweistatic.com/integration/pimages";
 //document.write('<script src="/account/status?'+(new Date()).getTime()+'"></s' + 'cript>');
@@ -253,42 +253,19 @@ $("#progress-confirm").show();
      <!-- ************************【start 新的地址  edit by wangshaohua  】******************************************************************  -->		
 	    	<!-- 20140813-订单-表单-地址-start -->
     	<div class="order-address" id="order-address-mod">
-    	
-			<h3 class="title">收货人信息<b>[<a id="addAddress" href="javascript:;" onclick="ec.order.myAddress.add()">使用新地址</a>]</b></h3>
+    	<!-- 自己写的以后加样式 -->        
 			<div style="display: none;" class="order-address-list" id="order-address-list">
 				<ol>
 				</ol>
 			</div>
 			<!-- 20140813-订单-表单-地址-空数据-start -->
-			<div class="order-address-empty" id="order-address-empty">您还没有收货地址，马上&nbsp;<a id="creatAddress" href="javascript:;" onclick="ec.order.myAddress.add()">添加</a>&nbsp;吧！</div><!-- 20140813-订单-表单-地址-空数据-end -->
+			
 			<div id="address-more" class="hide">
 				<a href="javascript:;" class="address-expand">更多地址<i></i></a>
 			</div>
 			<input name="orderDistrict" id="order-district" type="hidden">
             </div><!-- 20140813-订单-表单-地址-end -->
-	<!--  *******************************【end 新的地址 】************************************************************  -->
-		
-		<!--订单-表单-配送方式-20121012 
-		<div class="order-delivery">
-			<h3 class="title">配送方式</h3>
-			<div class="order-form-tips" id="order-delivery-tips">
-				<p>请先选择并确认收货人信息！</p>
-				<s></s><b></b>
-			</div>
-			<ul class="order-delivery-list" id="order-delivery-list">
-			</ul>
-		</div>
-		订单-表单-配送方式结束 -->
-		
-		<!-- 20160413-订单-表单-备注-start
-        <div class="order-invoice">
-        	<h3 class="title">订单备注</h3>
-        	<input id="note-input" name="note-input" type="text" placeholder="仅对特定商品有效，不可修改" class="text">
-        	<span id="orderNoteError"></span>
-        </div> -->
-        <!-- 20160413-订单-表单-备注-end -->
-		
-		<!--     新的发票信息     【start】      --><!--modify by l00222000 增加支持电子发票 20150320-->
+	
 				<div class="order-invoice">
         	<h3 class="title">发票信息<em>（请谨慎选择发票抬头，订单出库后不能修改）</em></h3>
 			<div class="order-invoice-list" id="order-invoice-area">
@@ -357,47 +334,85 @@ $("#progress-confirm").show();
 				<!--订单-商品-标题 -->
 				<div class="order-pro-title-area">
 					<div class="b">
-						<table border="0" cellpadding="0" cellspacing="0">
+						<table  border="0" cellpadding="0" cellspacing="0">
 							<thead>
 								<tr>
-									<th class="tr-pro">商品</th>
-									<th class="tr-price">单价（元）</th>
-									<th class="tr-quantity">数量</th>
-									<th class="tr-subtotal">小计（元）</th>
+									<th>商品名称</th>
+									<th>商品版本</th>
+									<th>颜色</th>
+									<th>容量</th>
+									<th>单价（元）</th>
+									<th>数量(个)</th>
+									<th>小计（元）</th>
 								</tr>
 							</thead>
 						</table>
 					</div>
 				</div>
-				<!--订单-商品-标题 -->
-			<!--订单-商品-套餐-->
-				<!--订单-商品-套餐  End-->
-				
-				<!--订单-商品-普通商品-->
+
 				<div class="order-pro-area">
 					<table border="0" cellpadding="0" cellspacing="0">
-						<tbody>
+						<tbody >
 							<tr>
-								<td class="tr-pro">
-									<ul class="pro-area-2">
-										<li>
-										  <a title="{{ URL('goodsqiname') }} {{ URL('goodsMassage') }} {{ URL('doogsTypes') }} {{ (URL('goodsColor')) }}" target="_blank" href="http://shopcn.huawei.com/item/154411301.html#555188138" seed="item-name">{{ URL('goodsqiname') }} {{ URL('goodsMassage') }} {{ URL('doogsTypes') }} {{ (URL('goodsColor')) }}</a>
-										</li> 
-									 </ul>
+								<td >
+									<?php
+										echo $data[0]->xgoodsName
+									?>
+									
+
+								 </td>
+								<td >
+									<?php
+										echo $data[0]->goodsTypes
+									?>
+									
+
 								 </td>
 								<!-- 预付订金商品的价格为空 -->
-								<td class="tr-price">¥{{ URL('goodsPrice') }}</td>
-								<td class="tr-quantity">1</td>
-								<td rowspan="1" class="tr-subtotal">
-								<p><b>¥3688.00</b></p>
+								<td>
+									<?php
+										echo $data[0]->goodsColor
+									?>
+								</td>
+								<td>
+									<?php
+										echo $data[0]->goodsMassage
+									?>
+								</td>
+								<td>
+									<?php
+										echo $data[0]->goodsPrice
+									?>
+								</td>
+								<td>
+									<input type="text" style="width:30px;text-align: center;" id="num" name="goodsnumber" value="1">
+								</td>
+								<td>
+								<p><b>
+									<div id="showTotal"></div>
+								</b></p>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<!-- 预付订金 start-->
-				<!-- 预付订金 end-->
-				<!--订单-商品-普通商品 End-->
+				<!-- // 件数与个数相乘开始 -->
+				<script type="text/javascript">
+					
+					$("#num").blur(function (){
+				        if($("#num").val() <= 0){
+				            alert("商品至少要购买一件")
+				            $("#num").val(1);
+				        }
+				       
+				        $("#showTotal").html($("#num").val()*{{ $data[0]->goodsPrice }}+'元')
+				        $("#aaaaaaa").html($("#num").val()*{{ $data[0]->goodsPrice }}+'元')
+				       	$("#fuzhi").val($("#num").val()*{{ $data[0]->goodsPrice }})
+				       	$("#goodsnumber").val($("#num").val())
+				    })  
+				</script>
+				<!-- // 件数与个数相乘结束 -->
+				
 			</div><!--购物车-商品列表-20121016 end-->
 		</div>
 		<!--购物车-自营商品列表结束 -->
@@ -412,12 +427,7 @@ $("#progress-confirm").show();
 					<div class="order-cost-area">
 						<table border="0" cellpadding="0" cellspacing="0">
 						<tbody>
-							<tr>
-								<td class="tal">商品总金额：</td>
-								<td class="tar">&nbsp;¥&nbsp;
-								   <em id="order-cost-area" data-oldval=" 3688.00">3688.00</em>
-								</td>
-							</tr>
+							
 							<tr>
 								<td class="tal">运费：</td>
 								<td class="tar">&nbsp;¥&nbsp;
@@ -433,7 +443,9 @@ $("#progress-confirm").show();
 						</tbody>
 					</table>
 						<p class="order-cost-total">
-						  <span class="p-subtotal-price"> 应付金额：<b class="total">¥</b><b class="total" id="order-price" data-oldval="3688.00">3688.00</b></span>
+						  <span class="p-subtotal-price"> 应付金额：<b class="total">¥ <button class="button-style-1 button-submit-order" id="aaaaaaa"></button></b><b class="total" id="order-price" data-oldval="3688.00">
+						  				
+								</b></span>
 					    </p>
 					</div><!-- 20140630-订单-金额-end -->
 				</div>
@@ -455,14 +467,33 @@ $("#progress-confirm").show();
 		<!--展示代销商品 start-->
 		 <!-- 代销商品展示结束 -->
 		 
+		<form action='{{ URL("/dan") }}'  method="post" >
+			
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+			
+		 	<b>收货人信息</b>
+			<br><br>
+			
+			<input type="hidden" name="yhid" value="{{ session('user')->id }}">
+			<input type="hidden" name="sxid" value="{{ $data[0]->id }}">
+			<input id="goodsnumber" type="hidden" name="goodsnumber" value="">
+			<input id="fuzhi" type="hidden" name="goodsPrice" value="">
+			<b>姓名</b>   <input type="text" name="shouHuoM">
+			<br><br>
+			<b>电话</b>   <input type="text" name="shouHuoDH">
+
+			<br><br>
+			<textarea name="dizhi" style="width:400px;height:50px;" placeholder="请仔细填写详细地址（地址有误公司概不负责）"></textarea>
+			<br>
+			<input class="button-style-1 button-submit-order" type="submit" value="确认订单" >
+		 </form>
 	    	<!-- 提交订单start-->
 			<div class="order-action-area tar">
 				<!-- 20140630-订单-下单验证-start -->
-				<div class="order-protect">
-				</div>
+				
 				<!-- 20140630-订单-下单验证-end -->
-				   <span class="p-subtotal-price">应付总额：<b>¥<span id="payableTotal"></span></b></span>
-				<a href="javascript:;" onclick="ec.order.submit();" class="button-style-1 button-submit-order" title="提交订单" seed="checkout-submit"><span>提交订单</span></a>
+				  
+				<!-- <a href="javascript:;" onclick="ec.order.submit();" class="button-style-1 button-submit-order" title="提交订单" seed="checkout-submit"><span>提交订单</span></a> -->
 			</div>
 		  <!-- 提交订单end-->
 	</div>
@@ -796,7 +827,7 @@ nbsp;
 		&lt;/tr&gt;
     &lt;/table&gt;
 </textarea>
-<script src="list/confirm.js"></script><script id="jsapi_loader0" loadtype="insert" type="text/javascript" src="list/box-min.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader0');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader0 fail!');} return; }ol._setLoadStatus("ec.box/box-min.js","complete");})();</script><script id="jsapi_loader1" loadtype="insert" type="text/javascript" src="list/bigInt.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader1');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader1 fail!');} return; }ol._setLoadStatus("dh/bigInt.min.js","complete");})();</script><script id="jsapi_loader2" loadtype="insert" type="text/javascript" src="list/aes.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader2');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader2 fail!');} return; }ol._setLoadStatus("aes/aes.js","complete");})();</script><script id="jsapi_loader3" loadtype="insert" type="text/javascript" src="list/aesUtil.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader3');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader3 fail!');} return; }ol._setLoadStatus("aes/aesUtil.js","complete");})();</script><script id="jsapi_loader4" loadtype="insert" type="text/javascript" src="list/pbkdf2.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader4');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader4 fail!');} return; }ol._setLoadStatus("aes/pbkdf2.js","complete");})();</script><script id="jsapi_loader5" loadtype="insert" type="text/javascript" src="list/rc4.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader5');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader5 fail!');} return; }ol._setLoadStatus("crypt/rc4.js","complete");})();</script><script id="jsapi_loader6" loadtype="insert" type="text/javascript" src="list/region-min.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader6');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader6 fail!');} return; }ol._setLoadStatus("linkSelect/region-min.js","complete");})();</script>
+<script src="{{ asset('huawei_files/confirm.js') }}"></script><script id="jsapi_loader0" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/box-min.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader0');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader0 fail!');} return; }ol._setLoadStatus("ec.box/box-min.js","complete");})();</script><script id="jsapi_loader1" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/bigInt.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader1');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader1 fail!');} return; }ol._setLoadStatus("dh/bigInt.min.js","complete");})();</script><script id="jsapi_loader2" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/aes.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader2');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader2 fail!');} return; }ol._setLoadStatus("aes/aes.js","complete");})();</script><script id="jsapi_loader3" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/aesUtil.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader3');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader3 fail!');} return; }ol._setLoadStatus("aes/aesUtil.js","complete");})();</script><script id="jsapi_loader4" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/pbkdf2.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader4');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader4 fail!');} return; }ol._setLoadStatus("aes/pbkdf2.js","complete");})();</script><script id="jsapi_loader5" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/rc4.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader5');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader5 fail!');} return; }ol._setLoadStatus("crypt/rc4.js","complete");})();</script><script id="jsapi_loader6" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/region-min.js') }}" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader6');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader6 fail!');} return; }ol._setLoadStatus("linkSelect/region-min.js","complete");})();</script>
 
 <script>
 ec.load("ajax");
@@ -813,7 +844,7 @@ ec.load("ajax");
 		ec.order.realTotalPrice = 0;
     ec.order.total=3688.00 <!--应付总金额-->
 document.getElementById("headerWord").innerHTML="填写核对订单";
-</script><script id="jsapi_loader7" loadtype="insert" type="text/javascript" src="list/jquery.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader7');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader7 fail!');} return; }ol._setLoadStatus("jquery.form","complete");})();</script><script id="jsapi_loader8" loadtype="insert" type="text/javascript" src="list/ajax.js" charset="utf-8"></script><iframe src="javascript:false" style="display: none;"></iframe><script id="dmpa_f_script" async="" src="list/dmpa-min.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader8');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader8 fail!');} return; }ol._setLoadStatus("ajax","complete");})();</script>
+</script><script id="jsapi_loader7" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/jquery.js') }}" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader7');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader7 fail!');} return; }ol._setLoadStatus("jquery.form","complete");})();</script><script id="jsapi_loader8" loadtype="insert" type="text/javascript" src="{{ asset('huawei_files/ajax.js') }}" charset="utf-8"></script><iframe src="javascript:false" style="display: none;"></iframe><script id="dmpa_f_script" async="" src="{{ asset('huawei_files/dmpa-min.js') }}"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader8');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader8 fail!');} return; }ol._setLoadStatus("ajax","complete");})();</script>
 
 <div class="g-foot-able cbg-centered">
         <div class="cbg-wrapper able-outer">

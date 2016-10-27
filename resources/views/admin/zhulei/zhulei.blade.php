@@ -19,7 +19,7 @@
             <div class="col-md-12">
               <div class="box">
                 <div class="box-header with-border">
-                  <span class="glyphicon glyphicon-th"></span><h3 class="box-title">学生信息管理</h3>
+                  <span class="glyphicon glyphicon-th"></span><h3 class="box-title">类别信息管理</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <!-- 搜索表单 开始-->
@@ -30,17 +30,17 @@
                   <!-- 搜索表单  结束 -->
                   <table class="table table-bordered">
                     <tr>
-                      <th style="width: 80px;text-align:center;">学号</th>
-                      <th style="width: 80px;text-align:center;">父类id</th>
-                      <th style="width: 80px;text-align:center;">路径</th>
+                      <th style="width: 80px;text-align:center;">编号</th>
+                      <!-- <th style="width: 80px;text-align:center;">父类id</th> -->
+                      <!-- <th style="width: 80px;text-align:center;">路径</th> -->
                       <th style="width: 80px;text-align:center;">类名</th>
                       <th style="width: 100px;text-align:center;">操作</th>
                     </tr>
                      @foreach($data as $user)
                     <tr>
                       <td style="text-align:center;vertical-align:middle;">{{ $user->id }}</td>
-                      <td style="text-align:center;vertical-align:middle;">{{ $user->pid }}</td>
-                      <td style="text-align:center;vertical-align:middle;">{{ $user->path }}</td>
+                      <!-- <td style="text-align:center;vertical-align:middle;">{{ $user->pid }}</td> -->
+                      <!-- <td style="text-align:center;vertical-align:middle;">{{ $user->path }}</td> -->
                       <td style="text-align:center;vertical-align:middle;">{{ $user->name }}</td>
                       <td style="text-align:center;vertical-align:middle;">
                         <a href="javascript:doDel({{ $user->id }});"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
@@ -67,7 +67,7 @@
               //1 获得form表单节点对象
               var myform = document.myform;
               //2 设置提交方式 
-              myform.action = "{{ URL('admin/stu') }}"+"/"+id;//提交地址 
+              myform.action = "{{ URL('admin/zhixzhulei') }}"+"/"+id;//提交地址 
               myform.submit();//执行表单提交
             }
           }

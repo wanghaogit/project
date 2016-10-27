@@ -19,7 +19,7 @@
             <div class="col-md-12">
               <div class="box">
                 <div class="box-header with-border">
-                  <span class="glyphicon glyphicon-th"></span><h3 class="box-title">学生信息管理</h3>
+                  <span class="glyphicon glyphicon-th"></span><h3 class="box-title">普通用户信息管理</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <!-- 搜索表单 开始-->
@@ -30,7 +30,7 @@
                   <!-- 搜索表单  结束 -->
                   <table class="table table-bordered">
                     <tr>
-                      <th style="width: 80px;text-align:center;">学号</th>
+                      <th style="width: 80px;text-align:center;">序号</th>
                       <th style="width: 80px;text-align:center;">姓名</th>
                       <th style="width: 80px;text-align:center;">密码</th>
                       <th style="width: 80px;text-align:center;">性别</th>

@@ -299,16 +299,20 @@
             <li class="treeview">
               <a href="#">
 
-                <i class="fa fa-dashboard"></i> <span>管理员信息管理</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> <span>管理员信息管理</span>
+                 <span class="label label-primary pull-right">2</span>
+                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><a href="{{ URL('admin/stu') }}"><i class="fa fa-circle-o"></i> 管理员主页 </a></li>
-                <li><a href="{{ URL('admin/stu/create') }}"><i class="fa fa-circle-o"></i> 新增管理员 </a></li>
+                <li><a href="{{ URL('admin/stu/create') }}"><i class="fa fa-circle-o"></i> 新增普通用户员 </a></li>
               </ul>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>普通用户信息管理</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> <span>普通用户信息管理</span> 
+                 <span class="label label-primary pull-right">2</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><a href="{{ URL('admin/putong') }}"><i class="fa fa-circle-o"></i> 普通用户主页 </a></li>
@@ -320,7 +324,7 @@
               <a href="#">
                 <i class="fa fa-files-o"></i>
                 <span>商品管理</span>
-                <span class="label label-primary pull-right">4</span>
+                <span class="label label-primary pull-right">3</span>
               </a>
               <ul class="treeview-menu">
                 <li><a href="{{ URL('admin/goods') }}"><i class="fa fa-circle-o"></i>查看商品信息</a></li>
@@ -338,7 +342,7 @@
               <a href="#">
                 <i class="fa fa-files-o"></i>
                 <span>类别管理</span>
-                <span class="label label-primary pull-right">4</span>
+                <span class="label label-primary pull-right">2</span>
               </a>
               <ul class="treeview-menu">
 
@@ -360,6 +364,7 @@
               <a href="#">
                 <i class="fa fa-pie-chart"></i>
                 <span>友情链接</span>
+                 <span class="label label-primary pull-right">2</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -371,49 +376,27 @@
             </li>
 
             <li class="treeview">
+              <a href="#">
+                <i class="fa fa-pie-chart"></i>
+                <span>首页板块管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                 <span class="label label-primary pull-right">2</span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="{{ URL('admin/write') }}"><i class="fa fa-circle-o"></i> 板块管理</a></li>
+                <li><a href="{{ URL('admin/write/create') }}"><i class="fa fa-circle-o"></i> 添加板块</a></li>
+                <!-- <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+                <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li> -->
+              </ul>
+            </li>
+
+            <li class="treeview">
               <a href="{{ URL('admin/on') }}">
                 <i class="fa fa-laptop"></i>
                 <span>网站开关</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              
-
             </li>
-           
-           
-           
-           
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-share"></i> <span>Multilevel</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
-                      <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-              </ul>
-
-            </li>
-            <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-
-            <li class="header">LABELS</li>
-            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
-
           </ul>
         </section>
         <!-- /.sidebar -->

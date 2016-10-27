@@ -43,6 +43,7 @@ class XiangqController extends Controller
     //3 添加表单
     public function createjia($id)
 	{
+        // return 12;
 	    $list = \DB::table("goodsinfo")->where('goodsId',$id)->get();
         $arr = $list->toArray();
          // dd($arr);
@@ -54,11 +55,11 @@ class XiangqController extends Controller
     public function store(Request $request)
 	{
         // dd($request);
-        if(!$request->has("goodsId","goodsqiname","goodsTypes","goodsMassage","goodsColor","goodsPrice")){
+        if(!$request->has("goodsId","xgoodsName","goodsTypes","goodsMassage","goodsColor","goodsPrice")){
             return back()->with('msg','请输入完整信息');
         } 
         // return 'aa';		//获得指定的下标对应的值 
-		$data = $request->only("goodsId","goodsqiname","goodsTypes","goodsMassage","goodsColor","goodsPic","goodsPrice");
+		$data = $request->only("goodsId","xgoodsName","goodsTypes","goodsMassage","goodsColor","goodsPic","goodsPrice");
 		// dd($data);
         //图片信息
         
@@ -107,7 +108,7 @@ class XiangqController extends Controller
 		// return 12;
         // dd($request);
 		 //1 接收表单提交的值 
-        $data = $request->only("goodsId","goodsqiname","goodsTypes","goodsMassage","goodsColor","goodsPic","goodsPrice");
+        $data = $request->only("goodsId","goodsTypes","goodsMassage","goodsColor","goodsPic","goodsPrice");
         // dd($data);
         $file = $request->file("goodsPic");
         // dd($file);

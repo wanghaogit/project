@@ -33,14 +33,18 @@ Route::get("/enroll","EnrollController@enroll");
 Route::resource("/doenroll","EnrollController");
 
 
-Route::get('/', function () {
-	return view('index');
-});
+
 //页面(查询友情链接)
 Route::get("/","LinkController@index");
 
 //前台订单表单
-Route::get("/ding","DingController@ding");
+Route::get("/ding/{tid?}","DingController@ding");
+//订单中转
+Route::resource("/dan","DanController");
+//前台取消订单
+Route::get("/Theorder/{id?}","TheorderController@onend");
+Route::get("/zhifu/{id?}","DanController@zhifu");
+
 
 // 前台手机遍历
 Route::resource("/phone","PhoneController");
@@ -49,17 +53,41 @@ Route::resource("/computer","ComputerController");
 //前台个人中心
 Route::resource("/myroom","RoomController");
 //前台商品购买页面
-Route::get('/shopping/{id?}',"ShopController@show");
-//ajax
+Route::get("/shopping/{id?}","ShopController@show");
+//颜色ajax
 Route::get('/color',"AjaxController@color");
+//内存ajax
+Route::get('/massage',"AjaxController@massage");
 
-//ajax订单生成
-Route::get('/order','AjaxController@order');
 
+//订单页
+Route::get('/shopcar','ShopcarController@index');
 
 Route::get('/admin',function(){
 	return view('admin.login');
 });
+//页面(开发者链接)
+Route::get("/Kai","KaiController@Kai");
+//在线客服显示视图
+Route::get('/talk','TalkController@index');
+Route::post('/talkup','TalkController@insert');
+Route::get('/talkwith','TalkController@with');
+Route::get("/Kai","KaiController@Kai");
+//购物车
+Route::get("/car/{id}","AjaxController@car");
+//购物车页面
+Route::get("/carpage","AjaxController@carpage");
+//删除
+Route::get('/del/{aa}','AjaxController@del');
+//清空购物车
+Route::get('/delcar/{id}','AjaxController@delcar');
+
+
+
+
+
+
+
 
 
 
@@ -68,7 +96,7 @@ Route::get('/admin',function(){
 
 //后台界面 需要登录才能访问的内容 
 	Route::group(["prefix"=>"admin","middleware"=>"myauth"],function(){
-		Route::get("/district/{upid?}","Admin\DistrictController@find");
+		Route::get("/district/{upid?}","Admin\DistrictController@find");//城市级联
 
 
 		Route::get("index","Admin\IndexController@index");//网站后台首页
@@ -88,6 +116,7 @@ Route::get('/admin',function(){
 		Route::resource("xiangqing","Admin\XiangqController");//详情的管理
 		Route::get("tJxiangQing/{id}","Admin\XiangqController@createjia");
 		Route::resource("links","Admin\LinksController");	//友情连接管理	--郑勇新添加
+		Route::resource("write","Admin\WriteController");	//页面板块连接管理	--郑勇新添加
 
 		// Route::get("zhuan","Admin\GoodsController@zhuan");	//成功后指向
 		Route::get("zhuan","Admin\StuController@zhuan");//执行成功的跳转

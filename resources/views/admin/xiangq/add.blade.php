@@ -37,34 +37,20 @@
                     <!-- 获取商品id -->
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">商品id不可更改哦</label>
-                      <!-- <div class="col-sm-4">
-                        <select  name="cid" class="form-control">
-                          <option value="">---- 请选择 ----</option>
-                          @foreach($list as $typeTable)
-                          <option name="{{ $typeTable->goodsId }}">{{ $typeTable->goodsqiname }}</option>
-                          @endforeach
-                        </select>
-                      </div> -->
+                     
                       <div class="col-sm-4">
                         @foreach($list as $value)
-                        <input type="text" name="goodsId" value="{{ $value->goodsId }}">
+                        <input readonly="readonly" type="text" name="goodsId" value="{{ $value->goodsId }}">
                         @endforeach
                       </div>
                     </div>
                     <!-- 获取商品名 -->
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">商品名不可更改哦</label>
-                      <!-- <div class="col-sm-4">
-                        <select  name="cid" class="form-control">
-                          <option value="">---- 请选择 ----</option>
-                          @foreach($list as $typeTable)
-                          <option name="{{ $typeTable->goodsId }}">{{ $typeTable->goodsqiname }}</option>
-                          @endforeach
-                        </select>
-                      </div> -->
+                      
                       <div class="col-sm-4">
                         @foreach($list as $value)
-                        <input type="text" name="goodsqiname" value="{{ $value->goodsqiname }}">
+                        <input readonly="readonly" type="text" name="xgoodsName" value="{{ $value->xgoodsName }}">
                         @endforeach
                       </div>
                     </div>
@@ -76,7 +62,7 @@
                       </div>
                     </div>
                      <div class="form-group">
-                      <label  class="col-sm-2 control-label">版本信息</label>
+                      <label  class="col-sm-2 control-label">内存</label>
                       <div class="col-sm-4">
                         <input type="text" name="goodsMassage" class="form-control">
                       </div>

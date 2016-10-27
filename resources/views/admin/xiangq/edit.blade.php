@@ -34,7 +34,7 @@
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">商品id不可改哦</label>
                       <div class="col-sm-4">
-                        <input type="text" name="goodsId" value="{{ $list->goodsId }}" class="form-control">
+                        <input readonly="readonly" type="text" name="goodsId" value="{{ $list->goodsId }}" class="form-control">
                       </div>
                     </div>
                      <div class="form-group">
@@ -44,7 +44,7 @@
                       </div>
                     </div>
                      <div class="form-group">
-                      <label  class="col-sm-2 control-label">版本信息</label>
+                      <label  class="col-sm-2 control-label">内存</label>
                       <div class="col-sm-4">
                         <input type="text" name="goodsMassage" value="{{ $list->goodsMassage }}" class="form-control">
                       </div>

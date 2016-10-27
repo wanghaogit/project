@@ -12,7 +12,7 @@ class ComputerController extends Controller
     public function index()
     {
     	//获得所有电脑信息
-    	$list = \DB::table('goods')->where('cid',2)->get();//信息传回去，叫$list
+    	$list = \DB::table('goods')->where('cid',13)->get();//信息传回去，叫$list
     	// dd($list);
     	//加载电脑列表视图
     	return view('computer',["list"=>$list]);

@@ -36,4 +36,12 @@ class ZhulsController extends Controller
             return "添加失败";
         }
 	}
+	 //7 执行删除
+    public function destroy($id)
+	{
+		//执行删除
+		\DB::table('typetable')->where('id',$id)->delete();
+		//跳转
+		return redirect("admin/chakzhulei");
+	}
 }
